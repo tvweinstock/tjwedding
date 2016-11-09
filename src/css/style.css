@@ -35,15 +35,49 @@ nav ul li a {
   height: 60px;
   width: 60px;
   line-height: 60px;
+  color: #fff;
 }
 .t,
 .j {
   border-radius: 50%;
-  color: #b4d9d6;
+  color: #b1d6d9;
   background: #fff;
+  position: relative;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.heart {
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+  color: #b1d6d9;
+}
+header.scrolled .t {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+}
+header.scrolled .j {
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+}
+header.scrolled .and {
+  display: none;
+}
+header.scrolled .heart {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.main {
+  padding-bottom: 100vh;
 }
 body {
   font-size: 15px;
   background: url("images/main_bg.jpg") center no-repeat;
+  margin: 0;
+  border-top: 5px solid #fff;
   font-family: didot;
 }
