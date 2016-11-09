@@ -5,7 +5,7 @@ class About extends React.Component {
     return (
       <div className="about">
         <div className="main">
-          <h1>This is the about page</h1>
+          <h1>The places we've been and the cheeses we've tried</h1>
         </div>
       </div>
     )

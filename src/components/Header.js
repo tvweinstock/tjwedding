@@ -4,6 +4,11 @@ class Header extends React.Component {
    render () {
      return (
        <header>
+        <div className="t-and-j">
+          <span className="t">T</span>
+          <span className="and">&</span>
+          <span className="j">J</span>
+        </div>
         <nav>
           <ul>
             <NavItem title="home" href="" />
