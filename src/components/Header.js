@@ -6,8 +6,9 @@ class Header extends React.Component {
        <header>
         <nav>
           <ul>
-            <NavItem title="about" />
-            <NavItem title="contact" />
+            <NavItem title="home" href="" />
+            <NavItem title="about" href="about" />
+            <NavItem title="contact" href="contact" />
           </ul>
         </nav>
        </header>
@@ -18,7 +19,7 @@ class Header extends React.Component {
 const NavItem = (props) => {
   return (
     <li>
-      <a href={`/${props.title}`}>{props.title}</a>
+      <a href={`/${props.href}`}>{props.title}</a>
     </li>
   )
 }
