@@ -5,7 +5,8 @@ nav ul {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 50%;
-  margin: 0 auto;
+  margin: 0 auto 50px;
+  padding: 0;
 }
 nav ul li {
   list-style: none;
@@ -28,6 +29,7 @@ nav ul li a {
       -ms-flex-align: center;
           align-items: center;
   margin: 20px 0 40px;
+  font-family: 'Pacifico', cursive;
 }
 .t,
 .j,
@@ -231,6 +233,7 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
 html {
   font-size: 62.5%;
 }
@@ -249,36 +252,6 @@ h4 {
 }
 body {
   font-size: 15px;
-  background: url("images/fresh_snow.png") center repeat;
   margin: 0;
   font-family: didot;
-}
-.main {
-  width: 80%;
-  background: #fff;
-  margin: 10vh auto;
-  padding: 20px;
-  position: relative;
-  border: 2px solid #000;
-  background: url("images/champ.jpeg") center no-repeat;
-}
-.main:before,
-.main:after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-}
-.main:before {
-  background: #000;
-  top: -28px;
-  left: -28px;
-  right: -28px;
-  bottom: -28px;
-}
-.main:after {
-  top: -25px;
-  left: -25px;
-  right: -25px;
-  bottom: -25px;
-  background: #fff;
 }

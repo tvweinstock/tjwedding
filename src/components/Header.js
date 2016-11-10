@@ -1,9 +1,10 @@
 import React from 'react';
-
+import Hero from './Hero'
 class Header extends React.Component {
    render () {
      return (
        <header>
+       <Hero />
         <nav>
           <ul>
             <NavItem title="home" href="" />
