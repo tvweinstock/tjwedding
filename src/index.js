@@ -13,7 +13,7 @@ import NotFound from './templates/NotFound';
 const Root = () => {
   return (
     <BrowserRouter>
-      <div>
+      <div className="main">
         <Header />
         <Match exactly pattern="/" component={App} />
         <Match exactly pattern="/about" component={About} />

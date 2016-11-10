@@ -3,7 +3,32 @@
 
 body
   font-size 15px
-  background url('images/main_bg.jpg') center no-repeat
+  background url('images/fresh_snow.png') center repeat
   margin 0
-  border-top 5px solid #fff
+  // border-top 5px solid #fff
   font-family didot
+
+.main
+  width 80%
+  background #fff
+  margin 10vh auto
+  padding 20px
+  position relative
+  border 2px solid #000
+  background url('images/champ.jpeg') center no-repeat
+  &:before, &:after
+    content ''
+    position absolute
+    z-index -1
+  &:before
+    background #000
+    top -28px
+    left -28px
+    right -28px
+    bottom -28px
+  &:after
+    top: -25px
+    left: -25px
+    right: -25px
+    bottom: -25px
+    background: white
