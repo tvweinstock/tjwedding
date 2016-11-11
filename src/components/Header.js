@@ -1,13 +1,15 @@
 import React from 'react';
-import Hero from './Hero'
+import TJ from './TJ'
+import {Link} from 'react-router';
+
 class Header extends React.Component {
    render () {
      return (
        <header>
-       <Hero />
+       <TJ />
         <nav>
           <ul>
-            <NavItem title="home" href="" />
+            <NavItem title="home" href="home" />
             <NavItem title="about" href="about" />
             <NavItem title="contact" href="contact" />
           </ul>
@@ -16,11 +18,26 @@ class Header extends React.Component {
      )
    }
 }
+//
+// class NavItem extends React.Component {
+//   render () {
+//     return (
+//         <li>
+//           <Link to={`/${props.href}`} activeClassName="active">
+//             {props.title}
+//           </Link>
+//         </li>
+//     )
+//
+//   }
+// }
 
 const NavItem = (props) => {
   return (
     <li>
-      <a href={`/${props.href}`}>{props.title}</a>
+      <Link to={`/${props.href}`} activeClassName="active">
+        {props.title}
+      </Link>
     </li>
   )
 }

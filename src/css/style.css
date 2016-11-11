@@ -1,12 +1,18 @@
+nav {
+  width: 30%;
+  min-width: 300px;
+  margin: 0 auto 50px;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 50%;
-  margin: 0 auto 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
   padding: 0;
+  border-bottom: 4px solid #000;
 }
 nav ul li {
   list-style: none;
@@ -15,6 +21,11 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #000;
+  padding: 0 0 20px;
+  display: inline-block;
+}
+nav ul li a.active {
+  color: #b1d6d9;
 }
 .t-and-j {
   text-align: center;
@@ -254,4 +265,7 @@ body {
   font-size: 15px;
   margin: 0;
   font-family: didot;
+}
+.app .hero {
+  background: url("images/champ.jpeg") center no-repeat;
 }
