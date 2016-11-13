@@ -1,0 +1,51 @@
+.lang-picker
+  display flex
+  justify-content flex-end
+  margin 10px auto
+  width 50%
+
+.lang-picker li
+  list-style none
+  text-transform uppercase
+  cursor pointer
+  margin-left 5px
+
+.t-and-j
+  text-align center
+  font-size 40px
+  display flex
+  justify-content center
+  align-items center
+  margin 0 0 30px
+  font-family: 'Pacifico', cursive
+
+.t, .j, .and
+  height 60px
+  width 60px
+  line-height 60px
+  color blue
+
+.t, .j
+  border-radius 50%
+  background #fff
+  position relative
+  transform translateX(0)
+  transition all 0.3s
+
+.heart
+  opacity 0
+  position absolute
+  z-index 1
+  font-size 18px
+  color blue
+
+.hero.scrolled
+  .t
+    transform translateX(5px)
+  .j
+    transform translateX(-5px)
+  .and
+    display none
+  .heart
+    opacity 1
+    transition opacity 0.3s

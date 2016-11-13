@@ -1,6 +1,6 @@
 import React from 'react';
 import TJ from './TJ'
-import {Link} from 'react-router';
+import { Link } from 'react-router';
 
 class Header extends React.Component {
    render () {
@@ -10,24 +10,14 @@ class Header extends React.Component {
        <TJ />
         <nav>
           <ul>
-            <NavItem title={data.home} href="home" />
-            <NavItem title={data.about} href="about" />
-            <NavItem title={data.contact} href="contact" />
+            <li><Link to="/main" activeClassName="active">{data.home}</Link></li>
+            <li><Link to="/about" activeClassName="active">{data.about}</Link></li>
+            <li><Link to="/contact" activeClassName="active">{data.contact}</Link></li>
           </ul>
         </nav>
        </header>
      )
    }
-}
-
-const NavItem = (props) => {
-  return (
-    <li>
-      <Link to={`/${props.href}`} activeClassName="active">
-        {props.title}
-      </Link>
-    </li>
-  )
 }
 
 export default Header;

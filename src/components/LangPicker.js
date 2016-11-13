@@ -10,8 +10,8 @@ class LangPicker extends React.Component {
   }
   render() {
     return (
-      <div>
-        <LangPickerItem lang="en" setActiveLang={this.setActiveLang} />
+      <div className="lang-picker">
+        <LangPickerItem lang="en" setActiveLang={this.setActiveLang} /> &nbsp;/
         <LangPickerItem lang="fr" setActiveLang={this.setActiveLang} />
       </div>
     )

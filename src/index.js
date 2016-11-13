@@ -5,7 +5,7 @@ import { BrowserRouter, Match, Miss } from 'react-router';
 import './css/style.css'
 
 import Header from './components/Header';
-import App from './templates/App';
+import Main from './templates/Main';
 import About from './templates/About';
 import Contact from './templates/Contact';
 import NotFound from './templates/NotFound';
@@ -47,7 +47,7 @@ class Root extends React.Component {
           <div className="main">
             <LangPicker setRootLang={this.setRootLang}/>
             <Header data={langData.header} />
-            <Match pattern="/" component={App} data={langData.main} />
+            <Match pattern="/" component={Main} data={langData.main} />
             <Match pattern="/about" component={About} data={langData.about} />
             <Match pattern="/contact" component={Contact} data={langData.contact} />
             <Miss component={NotFound}/>
