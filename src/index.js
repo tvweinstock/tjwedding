@@ -19,13 +19,25 @@ class Root extends React.Component {
     this.setRootLang = this.setRootLang.bind(this);
   }
   componentWillMount() {
-    this.setState({activeLang:en});
+    const localStorageRef = localStorage.getItem(`lang`);
+    if (localStorageRef) {
+      this.setState({
+        activeLang: JSON.parse(localStorageRef)
+      });
+    } else {
+      this.setState({activeLang:en});
+    }
+
   }
   setRootLang(lang) {
     if (lang === "fr")
       this.setState({activeLang:fr});
     else
       this.setState({activeLang:en});
+  }
+  componentWillUpdate(nextProps, nextState) {
+    console.log(nextState.activeLang);
+    localStorage.setItem(`lang`, JSON.stringify(nextState.activeLang));
   }
   render() {
     const langData = this.state.activeLang;
