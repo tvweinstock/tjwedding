@@ -2,7 +2,7 @@ import React from 'react';
 
 class TJ extends React.Component {
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    // window.addEventListener('scroll', this.handleScroll);
   }
   handleScroll(e) {
     const hero = document.querySelector('.hero');

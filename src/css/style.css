@@ -25,7 +25,7 @@ nav ul li a {
   display: inline-block;
 }
 nav ul li a.active {
-  color: #b1d6d9;
+  color: #41ead4;
 }
 .t-and-j {
   text-align: center;
@@ -48,12 +48,11 @@ nav ul li a.active {
   height: 60px;
   width: 60px;
   line-height: 60px;
-  color: #fff;
+  color: #41ead4;
 }
 .t,
 .j {
   border-radius: 50%;
-  color: #b1d6d9;
   background: #fff;
   position: relative;
   -webkit-transform: translateX(0);
@@ -66,7 +65,7 @@ nav ul li a.active {
   position: absolute;
   z-index: 1;
   font-size: 18px;
-  color: #b1d6d9;
+  color: #41ead4;
 }
 .hero.scrolled .t {
   -webkit-transform: translateX(5px);
@@ -251,7 +250,8 @@ html {
 body {
   font-size: 2rem;
 }
-h1 {
+h1,
+h2 {
   text-align: center;
   font-weight: normal;
   margin: 0;
@@ -260,6 +260,10 @@ h2,
 h3,
 h4 {
   font-weight: normal;
+}
+.hero h1,
+.hero h2 {
+  color: #fdfffc;
 }
 body {
   font-size: 15px;

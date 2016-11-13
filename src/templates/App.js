@@ -5,7 +5,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
-        <Hero />
+        <Hero title="July 22, 2016"
+              subtitle="Please join us for our wedding" />
       </div>
     );
   }

@@ -4,33 +4,21 @@ import {Link} from 'react-router';
 
 class Header extends React.Component {
    render () {
+     const data = this.props.data;
      return (
        <header>
        <TJ />
         <nav>
           <ul>
-            <NavItem title="home" href="home" />
-            <NavItem title="about" href="about" />
-            <NavItem title="contact" href="contact" />
+            <NavItem title={data.home} href="home" />
+            <NavItem title={data.about} href="about" />
+            <NavItem title={data.contact} href="contact" />
           </ul>
         </nav>
        </header>
      )
    }
 }
-//
-// class NavItem extends React.Component {
-//   render () {
-//     return (
-//         <li>
-//           <Link to={`/${props.href}`} activeClassName="active">
-//             {props.title}
-//           </Link>
-//         </li>
-//     )
-//
-//   }
-// }
 
 const NavItem = (props) => {
   return (
