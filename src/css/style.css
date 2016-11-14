@@ -21,7 +21,8 @@
   height: 2px;
   width: 10px;
   position: absolute;
-  left: 1px;
+  left: 50%;
+  margin-left: -5px;
   display: block;
   background: #011627;
 }
@@ -294,6 +295,12 @@ h4 {
 .hero h1,
 .hero h2 {
   color: #fdfffc;
+}
+a:focus,
+a:hover,
+a:active {
+  opacity: 0.5;
+  outline: 0;
 }
 body {
   margin: 0;
