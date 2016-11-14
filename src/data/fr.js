@@ -1,4 +1,7 @@
 module.exports = {
+  data: {
+    lang:'fr'
+  },
   header: {
     home: 'accueil',
     about: 'à propos',

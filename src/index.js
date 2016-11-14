@@ -36,7 +36,6 @@ class Root extends React.Component {
       this.setState({activeLang:en});
   }
   componentWillUpdate(nextProps, nextState) {
-    console.log(nextState.activeLang);
     localStorage.setItem(`lang`, JSON.stringify(nextState.activeLang));
   }
   render() {
@@ -45,7 +44,7 @@ class Root extends React.Component {
       <div>
         <BrowserRouter>
           <div className="main">
-            <LangPicker setRootLang={this.setRootLang}/>
+            <LangPicker data={langData.lang} setRootLang={this.setRootLang} />
             <Header data={langData.header} />
             <Match pattern="/" component={Main} data={langData.main} />
             <Match pattern="/about" component={About} data={langData.about} />

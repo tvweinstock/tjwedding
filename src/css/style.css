@@ -7,12 +7,13 @@
           justify-content: flex-end;
   margin: 10px auto;
   width: 50%;
+  font-size: 1.5rem;
 }
 .lang-picker li {
   list-style: none;
   text-transform: uppercase;
   cursor: pointer;
-  margin-left: 5px;
+  margin: 0 5px;
 }
 .t-and-j {
   text-align: center;
@@ -85,15 +86,16 @@ nav ul {
   width: 100%;
   padding: 0;
   margin: 0;
-  border-bottom: 4px solid #000;
+  border-bottom: 4px solid #011627;
 }
 nav ul li {
   list-style: none;
+  font-size: 1.5rem;
 }
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #000;
+  color: #011627;
   padding: 0 0 20px;
   display: inline-block;
 }
@@ -260,12 +262,13 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300");
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
 }
 h1,
 h2 {
@@ -283,9 +286,7 @@ h4 {
   color: #fdfffc;
 }
 body {
-  font-size: 15px;
   margin: 0;
-  font-family: didot;
 }
 .app .hero {
   background: url("images/champ.jpeg") center no-repeat;
