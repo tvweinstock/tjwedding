@@ -5,8 +5,11 @@ class LangPicker extends React.Component {
     super();
     this.setActiveLang = this.setActiveLang.bind(this);
   }
+  componentDidMount() {
+    const activeLangOnLoad = this.props.data;
+    document.querySelector(`.${activeLangOnLoad}`).classList.add('lang-active');
+  }
   setActiveLang(lang) {
-    // send active lang down with props and set active class on load
     console.log(document.querySelector(`.${lang}`));
     this.props.setRootLang(lang);
     document.querySelector('.lang-active').classList.remove('lang-active');

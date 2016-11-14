@@ -10,7 +10,7 @@ class Header extends React.Component {
        <TJ />
         <nav>
           <ul>
-            <li><Link to="/main" activeClassName="active">{data.home}</Link></li>
+            <li><Link to="/" activeOnlyWhenExact activeClassName="active">{data.home}</Link></li>
             <li><Link to="/about" activeClassName="active">{data.about}</Link></li>
             <li><Link to="/contact" activeClassName="active">{data.contact}</Link></li>
           </ul>

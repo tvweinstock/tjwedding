@@ -1,15 +1,14 @@
 import React from 'react';
-import Hero from '../components/Hero'
 
-class App extends React.Component {
+class Main extends React.Component {
   render() {
+    const textData = this.props.data;
     return (
-      <div className="app">
-        <Hero title="July 22, 2016"
-              subtitle="Please join us for our wedding" />
+      <div id="main">
+        <h1>{textData.title}</h1>
       </div>
     );
   }
 }
 
-export default App;
+export default Main;

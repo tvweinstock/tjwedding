@@ -10,6 +10,15 @@
   text-transform uppercase
   cursor pointer
   margin 0 5px
+  position relative
+  &.lang-active:after
+    content ''
+    height 2px
+    width 10px
+    position absolute
+    left 1px
+    display block
+    background darkBlue
 
 .t-and-j
   text-align center
