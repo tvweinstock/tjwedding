@@ -34,11 +34,14 @@
   height 60px
   width 60px
   line-height 60px
+  color #fff
+
+.and
   color blue
 
 .t, .j
   border-radius 50%
-  background #fff
+  background blue
   position relative
   transform translateX(0)
   transition all 0.3s
@@ -48,9 +51,10 @@
   position absolute
   z-index 1
   font-size 18px
-  color blue
+  color #fff
 
-.hero.scrolled
+header.scrolled
+  position fixed
   .t
     transform translateX(5px)
   .j

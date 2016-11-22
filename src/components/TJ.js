@@ -2,15 +2,16 @@ import React from 'react';
 
 class TJ extends React.Component {
   componentDidMount() {
-    // window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
   handleScroll(e) {
-    const hero = document.querySelector('.hero');
+    const header = document.querySelector('header');
+    console.log('scrolliieesss', header);
     let scrollTop = e.srcElement.body.scrollTop;
     if (scrollTop > 20) {
-      hero.classList.add('scrolled');
+      header.classList.add('scrolled');
     } else {
-      hero.classList.remove('scrolled');
+      header.classList.remove('scrolled');
     }
   }
   render() {

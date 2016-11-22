@@ -47,12 +47,15 @@
   height: 60px;
   width: 60px;
   line-height: 60px;
+  color: #fff;
+}
+.and {
   color: #41ead4;
 }
 .t,
 .j {
   border-radius: 50%;
-  background: #fff;
+  background: #41ead4;
   position: relative;
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -64,20 +67,23 @@
   position: absolute;
   z-index: 1;
   font-size: 18px;
-  color: #41ead4;
+  color: #fff;
 }
-.hero.scrolled .t {
+header.scrolled {
+  position: fixed;
+}
+header.scrolled .t {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
 }
-.hero.scrolled .j {
+header.scrolled .j {
   -webkit-transform: translateX(-5px);
           transform: translateX(-5px);
 }
-.hero.scrolled .and {
+header.scrolled .and {
   display: none;
 }
-.hero.scrolled .heart {
+header.scrolled .heart {
   opacity: 1;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
