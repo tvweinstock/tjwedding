@@ -7,7 +7,6 @@ import Contact from './Contact';
 import LangPicker from '../components/LangPicker'
 import en from '../data/en'
 import fr from '../data/fr'
-import { Match } from 'react-router';
 
 class App extends React.Component {
   constructor(props) {
@@ -37,17 +36,12 @@ class App extends React.Component {
   render() {
     let langData = this.state.activeLang;
     return (
-      <div>
-          <div className="main">
-            <LangPicker data={langData.data.lang} setRootLang={this.setRootLang} />
-            <Header data={langData.header} />
-            <Match exactly pattern="/"
-                           render={() => <Main data={langData.main} />} />
-            <Match exactly pattern="/about"
-                          render={() => <About data={langData.about} />} />
-            <Match exactly pattern="/contact"
-                          render={() => <Contact data={langData.contact} />} />
-          </div>
+      <div className="main">
+        <LangPicker data={langData.data.lang} setRootLang={this.setRootLang} />
+        <Header data={langData.header} />
+        <Main data={langData.main} />
+        <About data={langData.about} />
+        <Contact data={langData.contact} />
       </div>
     )
   }

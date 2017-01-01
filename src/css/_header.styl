@@ -21,46 +21,28 @@
     display block
     background darkBlue
 
-.t-and-j
-  text-align center
-  font-size 40px
+.hero
+  background-image url(images/panam.jpg)
+  background-position center center
+  background-repeat no-repeat
+  background-attachment fixed
+  background-size: cover
+
+.hero .wrapper
+  height 100%
+  width 100%
+
+
+.hero .title-group
+  padding 200px 0
+
+.hero .title-group__circle
+  height 300px
+  width 300px
+  background-color rgba(255, 221, 74, 0.5)
   display flex
+  flex-direction column
   justify-content center
   align-items center
-  margin 0 0 30px
-  font-family: 'Pacifico', cursive
-
-.t, .j, .and
-  height 60px
-  width 60px
-  line-height 60px
-  color #fff
-
-.and
-  color blue
-
-.t, .j
   border-radius 50%
-  background blue
-  position relative
-  transform translateX(0)
-  transition all 0.3s
-
-.heart
-  opacity 0
-  position absolute
-  z-index 1
-  font-size 18px
-  color #fff
-
-header.scrolled
-  position fixed
-  .t
-    transform translateX(5px)
-  .j
-    transform translateX(-5px)
-  .and
-    display none
-  .heart
-    opacity 1
-    transition opacity 0.3s
+  margin 0 auto

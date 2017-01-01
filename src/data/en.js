@@ -5,11 +5,13 @@ module.exports = {
   header: {
     home: 'home',
     about: 'about',
-    contact: 'contact'
+    contact: 'contact',
+    title: 'Tobi and Jeoff',
+    subtitle: '20/05/2017'
   },
   main: {
-    title: 'Tobi and Jeoff',
-    subtitle: 'Wanna party like rockstarts'
+    mainTitle: 'Tobi and Jeoff',
+    mainSubtitle: 'Wanna party like rockstarts'
   },
 
   contact: {

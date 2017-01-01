@@ -4,9 +4,9 @@ class Main extends React.Component {
   render() {
     const textData = this.props.data;
     return (
-      <div id="main">
-        <h1>{textData.title}</h1>
-      </div>
+      <section id="home">
+        <h1>{textData.mainTitle}</h1>
+      </section>
     );
   }
 }

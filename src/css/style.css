@@ -24,69 +24,41 @@
   left: 50%;
   margin-left: -5px;
   display: block;
-  background: #011627;
+  background: darkBlue;
 }
-.t-and-j {
-  text-align: center;
-  font-size: 40px;
+.hero {
+  background-image: url("images/panam.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.hero .wrapper {
+  height: 100%;
+  width: 100%;
+}
+.hero .title-group {
+  padding: 200px 0;
+}
+.hero .title-group__circle {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(255,221,74,0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 30px;
-  font-family: 'Pacifico', cursive;
-}
-.t,
-.j,
-.and {
-  height: 60px;
-  width: 60px;
-  line-height: 60px;
-  color: #fff;
-}
-.and {
-  color: #41ead4;
-}
-.t,
-.j {
   border-radius: 50%;
-  background: #41ead4;
-  position: relative;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.heart {
-  opacity: 0;
-  position: absolute;
-  z-index: 1;
-  font-size: 18px;
-  color: #fff;
-}
-header.scrolled {
-  position: fixed;
-}
-header.scrolled .t {
-  -webkit-transform: translateX(5px);
-          transform: translateX(5px);
-}
-header.scrolled .j {
-  -webkit-transform: translateX(-5px);
-          transform: translateX(-5px);
-}
-header.scrolled .and {
-  display: none;
-}
-header.scrolled .heart {
-  opacity: 1;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  margin: 0 auto;
 }
 nav {
   width: 30%;
@@ -103,7 +75,7 @@ nav ul {
   width: 100%;
   padding: 0;
   margin: 0;
-  border-bottom: 4px solid #011627;
+  border-bottom: 4px solid darkBlue;
 }
 nav ul li {
   list-style: none;
@@ -112,12 +84,12 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #011627;
+  color: darkBlue;
   padding: 0 0 20px;
   display: inline-block;
 }
 nav ul li a.active {
-  color: #41ead4;
+  color: #00f;
 }
 article,
 aside,
@@ -300,7 +272,7 @@ h4 {
 }
 .hero h1,
 .hero h2 {
-  color: #fdfffc;
+  color: #fff;
 }
 a:focus,
 a:hover,
@@ -308,12 +280,13 @@ a:active {
   opacity: 0.5;
   outline: 0;
 }
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }
-.app .hero {
-  background: url("images/champ.jpeg") center no-repeat;
-}
-.hero .title-group {
-  padding: 100px 0;
+.playlist-form {
+  margin: 40px 0;
+  text-align: center;
 }
