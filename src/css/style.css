@@ -63,9 +63,9 @@
   margin: 0 auto;
 }
 nav {
-  width: 30%;
-  min-width: 300px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
 }
 nav ul {
   display: -webkit-box;
@@ -74,9 +74,9 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 30%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   border-bottom: 4px solid darkBlue;
 }
 nav ul li {
