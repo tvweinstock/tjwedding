@@ -6,7 +6,7 @@ module.exports = {
     home: 'accueil',
     about: 'à propos',
     contact: 'contact',
-    title: 'Tobi et Jeoff',
+    title: 'Tobi & Jeoff',
     subtitle: '20/05/2017'
   },
   main: {

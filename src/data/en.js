@@ -6,11 +6,11 @@ module.exports = {
     home: 'home',
     about: 'about',
     contact: 'contact',
-    title: 'Tobi and Jeoff',
+    title: 'Tobi & Jeoff',
     subtitle: '20/05/2017'
   },
   main: {
-    mainTitle: 'Tobi and Jeoff',
+    mainTitle: 'Tobi & Jeoff',
     mainSubtitle: 'Wanna party like rockstarts'
   },
 
