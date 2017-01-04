@@ -5,17 +5,27 @@
   background-attachment: fixed;
   background-size: cover;
 }
-.hero .wrapper {
+.hero .hero__wrapper {
   height: 100%;
   width: 100%;
+  position: relative;
 }
-.hero .title-group {
+.hero .hero__wrapper::after {
+  content: "";
+  border: 1px solid #fdfffc;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  position: absolute;
+  top: 0;
+}
+.hero .hero__title-group {
   padding: 270px 0;
 }
-.hero .title-group__circle {
+.hero .hero__title-group--circle {
   height: 300px;
   width: 300px;
-  background-color: rgba(255,221,74,0.5);
+  background-color: rgba(231,29,54,0.51);
   background-image: url("images/bg_circle.png");
   background-repeat: no-repeat;
   display: -webkit-box;
@@ -39,15 +49,15 @@
   color: #fdfffc;
 }
 .hero h2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 2.4rem;
   letter-spacing: 0.4rem;
 }
 header nav {
   width: 100%;
   margin: 0;
-  background-color: #fff;
-  border-bottom: 4px solid #011627;
+  background-color: #011627;
+  border-bottom: 4px solid #e71d36;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +80,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #011627;
+  color: #fdfffc;
   padding: 20px;
   display: inline-block;
 }
@@ -86,6 +96,7 @@ nav ul li a.active {
   font-size: 1.5rem;
   -ms-flex-item-align: center;
       align-self: center;
+  color: #fdfffc;
 }
 .lang-picker li {
   list-style: none;
@@ -102,7 +113,7 @@ nav ul li a.active {
   left: 50%;
   margin-left: -5px;
   display: block;
-  background: #011627;
+  background: #e71d36;
 }
 article,
 aside,
@@ -264,21 +275,20 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Cormorant+Unicase:300");
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 h1,
 h2 {
   text-align: center;
   font-weight: normal;
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
+  font-family: 'Cormorant Unicase', serif;
 }
 h2,
 h3,
@@ -296,6 +306,9 @@ a:active {
 }
 body {
   margin: 0;
+}
+section {
+  margin: 60px 0;
 }
 .playlist-form {
   margin: 40px 0;
