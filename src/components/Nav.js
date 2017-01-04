@@ -5,20 +5,10 @@ import _ from 'lodash';
 class Nav extends React.Component {
   constructor(props) {
     super(props);
-    // this.setRootLang = this.setRootLang.bind(this);
     window.addEventListener('scroll', _.throttle(this.stickIt, 10));
   }
-  componentDidMount() {
-    const menu = document.querySelector('.menu');
-    const clonedMenu = menu.cloneNode(true);
-    const header = document.querySelector('header');
-    menu.classList.add('original');
-    clonedMenu.classList.add('cloned');
-    clonedMenu.style.display = 'none';
-    header.appendChild(clonedMenu);
-  }
   stickIt() {
-    let orgMenuPos = document.querySelector('.menu').getBoundingClientRect();
+    let orgMenuPos = document.querySelector('nav').getBoundingClientRect();
     let orgMenuTop = orgMenuPos.top + document.body.scrollTop;
     const orgMenu = document.querySelector('.original');
     const clonedMenu2 = document.querySelector('.cloned');
@@ -34,7 +24,7 @@ class Nav extends React.Component {
   render() {
     const data = this.props.data;
     return (
-      <nav className="menu">
+      <nav className={this.props.navType}>
         <ul>
           <li><a href="#">{data.home}</a></li>
           <li><a href="#about">{data.about}</a></li>

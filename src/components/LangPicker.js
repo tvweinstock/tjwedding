@@ -7,12 +7,21 @@ class LangPicker extends React.Component {
   }
   componentDidMount() {
     const activeLangOnLoad = this.props.data;
-    document.querySelector(`.${activeLangOnLoad}`).classList.add('lang-active');
+    const activeLangItems = document.querySelectorAll(`.${activeLangOnLoad}`)
+    for (let i = 0; i < activeLangItems.length; i++) {
+      activeLangItems[i].classList.add('lang-active');
+    }
   }
   setActiveLang(lang) {
     this.props.setRootLang(lang);
-    document.querySelector('.lang-active').classList.remove('lang-active');
-    document.querySelector(`.${lang}`).classList.add('lang-active');
+    let currentActiveLang = document.querySelectorAll('.lang-active');
+    for (let i = 0; i < currentActiveLang.length; i++) {
+      currentActiveLang[i].classList.remove('lang-active');
+    }
+    let langToSetActive = document.querySelectorAll(`.${lang}`);
+    for (let i = 0; i < langToSetActive.length; i++) {
+      langToSetActive[i].classList.add('lang-active');
+    }
   }
   render() {
     return (
