@@ -280,7 +280,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 h1,
@@ -301,6 +301,14 @@ a:active {
   opacity: 0.5;
   outline: 0;
 }
+section h1::after {
+  content: "";
+  height: 2px;
+  width: 30px;
+  display: block;
+  background: #e71d36;
+  margin: 10px auto;
+}
 * {
   box-sizing: border-box;
 }
@@ -309,6 +317,12 @@ body {
 }
 section {
   margin: 60px 0;
+}
+.circle-image {
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #e71d36;
 }
 .playlist-form {
   margin: 40px 0;

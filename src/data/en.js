@@ -8,7 +8,7 @@ module.exports = {
     subtitle: '20/05/2017'
   },
   main: {
-    mainTitle: 'Tobi & Jeoff',
+    mainTitle: 'A wedding in Paris',
     mainSubtitle: 'Wanna party like rockstarts'
   },
 
