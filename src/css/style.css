@@ -1,31 +1,3 @@
-.lang-picker {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin: 10px auto;
-  width: 95%;
-  font-size: 1.5rem;
-}
-.lang-picker li {
-  list-style: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin: 0 5px;
-  position: relative;
-}
-.lang-picker li.lang-active:after {
-  content: '';
-  height: 2px;
-  width: 10px;
-  position: absolute;
-  left: 50%;
-  margin-left: -5px;
-  display: block;
-  background: darkBlue;
-}
 .hero {
   background-image: url("images/panam.jpg");
   background-position: center center;
@@ -38,7 +10,7 @@
   width: 100%;
 }
 .hero .title-group {
-  padding: 200px 0;
+  padding: 270px 0;
 }
 .hero .title-group__circle {
   height: 300px;
@@ -62,10 +34,23 @@
   border-radius: 50%;
   margin: 0 auto;
 }
-nav {
+.hero h1,
+.hero h2 {
+  color: #fdfffc;
+}
+.hero h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.4rem;
+  letter-spacing: 0.4rem;
+}
+header nav {
   width: 100%;
   margin: 0;
   background-color: #fff;
+  border-bottom: 4px solid #011627;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 nav ul {
   display: -webkit-box;
@@ -74,10 +59,9 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30%;
   padding: 0;
   margin: 0 auto;
-  border-bottom: 4px solid darkBlue;
+  position: relative;
 }
 nav ul li {
   list-style: none;
@@ -86,12 +70,39 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: darkBlue;
-  padding: 0 0 20px;
+  color: #011627;
+  padding: 20px;
   display: inline-block;
 }
 nav ul li a.active {
   color: #00f;
+}
+.lang-picker {
+  position: absolute;
+  right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.lang-picker li {
+  list-style: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 5px;
+  position: relative;
+}
+.lang-picker li.lang-active:after {
+  content: '';
+  height: 2px;
+  width: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -5px;
+  display: block;
+  background: #011627;
 }
 article,
 aside,
@@ -273,10 +284,6 @@ h2,
 h3,
 h4 {
   font-weight: normal;
-}
-.hero h1,
-.hero h2 {
-  color: #fff;
 }
 a:focus,
 a:hover,

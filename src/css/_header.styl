@@ -1,26 +1,3 @@
-.lang-picker
-  display flex
-  justify-content flex-end
-  margin 10px auto
-  width 95%
-  font-size 1.5rem
-
-.lang-picker li
-  list-style none
-  text-transform uppercase
-  cursor pointer
-  margin 0 5px
-  position relative
-  &.lang-active:after
-    content ''
-    height 2px
-    width 10px
-    position absolute
-    left 50%
-    margin-left -5px
-    display block
-    background darkBlue
-
 .hero
   background-image url(images/panam.jpg)
   background-position center center
@@ -34,7 +11,7 @@
 
 
 .hero .title-group
-  padding 200px 0
+  padding 270px 0
 
 .hero .title-group__circle
   height 300px
@@ -48,3 +25,11 @@
   align-items center
   border-radius 50%
   margin 0 auto
+
+.hero h1, .hero h2
+  color txtWhite
+
+.hero h2
+  font-family 'Open Sans', sans-serif
+  font-size 2.4rem
+  letter-spacing 0.4rem

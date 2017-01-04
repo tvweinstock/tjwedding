@@ -1,8 +1,6 @@
 module.exports = {
-  data: {
-    lang:'en'
-  },
   header: {
+    lang:'en',
     home: 'home',
     about: 'about',
     contact: 'contact',
