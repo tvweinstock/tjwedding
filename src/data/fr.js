@@ -8,8 +8,11 @@ module.exports = {
     subtitle: '20/05/2017'
   },
   main: {
-    mainTitle: 'Un mariage à Paris',
-    mainSubtitle: 'Venez faire la grosse fête avec nous'
+    inviteTitle: 'Un mariage à Paris',
+    inviteNames: `Tobi Victoria Weinstock \n & \n Jeoffrey Alfred Jacques Roussey`,
+    inviteDate: 'on Saturday, May Twentieth \n Two Thousand & Seventeen \n at four o\'clock in the afternoon',
+    inviteAddress: 'Chalet de la Porte Jaune \n AVENUE DE NOGENT \n 75012 Paris',
+    inviteConclusion: 'Reception, dinner and dancing to follow'
   },
   contact: {
     number: '332220039393',
@@ -17,7 +20,7 @@ module.exports = {
     desc: 'Préparez-vous à boire énormement de champagne et de manger tous les hommards',
   },
   about: {
-    date: '22/07/2017',
-    morelove: 'amour'
+    date: '',
+    morelove: ''
   }
 };

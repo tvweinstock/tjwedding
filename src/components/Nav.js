@@ -1,11 +1,11 @@
 import React from 'react';
 import LangPicker from './LangPicker';
-import _ from 'lodash';
+import lodash from 'lodash';
 
 class Nav extends React.Component {
   constructor(props) {
     super(props);
-    window.addEventListener('scroll', _.throttle(this.stickIt, 10));
+    window.addEventListener('scroll', lodash.throttle(this.stickIt, 10));
   }
   stickIt() {
     let orgMenuPos = document.querySelector('nav').getBoundingClientRect();
