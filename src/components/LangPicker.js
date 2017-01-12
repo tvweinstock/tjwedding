@@ -7,31 +7,31 @@ class LangPicker extends React.Component {
   }
   componentDidMount() {
     const activeLangOnLoad = this.props.data;
-    const activeLangItems = document.querySelectorAll(`.${activeLangOnLoad}`)
-    for (let i = 0; i < activeLangItems.length; i++) {
-      activeLangItems[i].classList.add('lang-active');
-    }
-  }
+    const activeLangItems = document.querySelectorAll(`.${activeLangOnLoad}`);
+    for (const activeLangItem of activeLangItems) {
+      activeLangItem.classList.add('lang-active');
+    };
+  };
   setActiveLang(lang) {
     this.props.setRootLang(lang);
-    let currentActiveLang = document.querySelectorAll('.lang-active');
-    for (let i = 0; i < currentActiveLang.length; i++) {
-      currentActiveLang[i].classList.remove('lang-active');
-    }
-    let langToSetActive = document.querySelectorAll(`.${lang}`);
-    for (let i = 0; i < langToSetActive.length; i++) {
-      langToSetActive[i].classList.add('lang-active');
-    }
-  }
+    const currentActiveLangLis = document.querySelectorAll('.lang-active');
+    for (const langLi of currentActiveLangLis) {
+      langLi.classList.remove('lang-active');
+    };
+    const langsToSetActive = document.querySelectorAll(`.${lang}`);
+    for (const langToSetActive of langsToSetActive) {
+      langToSetActive.classList.add('lang-active');
+    };
+  };
   render() {
     return (
       <div className="lang-picker">
         <LangPickerItem lang="en" setActiveLang={this.setActiveLang} /> /
         <LangPickerItem lang="fr" setActiveLang={this.setActiveLang} />
       </div>
-    )
-  }
-}
+    );
+  };
+};
 
 class LangPickerItem extends React.Component {
   getActiveLang() {
