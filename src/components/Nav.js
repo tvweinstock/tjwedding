@@ -11,13 +11,13 @@ class Nav extends React.Component {
     let orgMenuPos = document.querySelector('nav').getBoundingClientRect();
     let orgMenuTop = orgMenuPos.top + document.body.scrollTop;
     const orgMenu = document.querySelector('.original');
-    const clonedMenu2 = document.querySelector('.cloned');
+    const clonedMenu = document.querySelector('.cloned');
     if (document.body.scrollTop >= (orgMenuTop)) {
       let orgMenuLeft = orgMenu.getBoundingClientRect().left;
-      clonedMenu2.style.cssText = `position:fixed; margin: 0 auto; z-index:500; left:${orgMenuLeft}; top:0;`;
+      clonedMenu.style.cssText = `position:fixed; margin: 0 auto; z-index:500; left:${orgMenuLeft}; top:0; opacity:1; display:flex`;
       orgMenu.style.visibility = 'hidden';
     } else {
-      clonedMenu2.style.display = 'none';
+      clonedMenu.style.display = 'none';
       orgMenu.style.visibility = 'visible';
     }
   }

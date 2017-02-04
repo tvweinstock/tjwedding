@@ -24,9 +24,19 @@ section p
   padding 60px 0
   background-color #fff
   width 50%
-  border-radius 50%
   margin 0 auto
-  border 4px solid accentYellow
+  border 2px solid berryRed
+
+.oa1
+  animation fades 4s infinite
+.oa2
+  animation fades 5s infinite
+  animation-delay 1s
+.oa3
+  animation fades 6s infinite
+  animation-delay 2s
+
+
 
 .invitation + svg
   position absolute
@@ -36,7 +46,10 @@ section p
   height 100%
   opacity 0.8
   z-index -1
-  fill berryRed
+
+
+
+
 
 .invitation p
   text-transform uppercase
@@ -68,3 +81,16 @@ section p
 .playlist-form
   margin 40px 0
   text-align center
+
+@keyframes fades {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+
+}

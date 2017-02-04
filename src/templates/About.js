@@ -1,5 +1,5 @@
 import React from 'react';
-import PlaylistGenerator from '../components/PlaylistGenerator'
+// import PlaylistGenerator from '../components/PlaylistGenerator'
 
 class About extends React.Component {
   render() {
@@ -8,7 +8,7 @@ class About extends React.Component {
       <section id="about">
         <h1>{textData.date}</h1>
         <h2>{textData.morelove}</h2>
-        <PlaylistGenerator />
+        {/* <PlaylistGenerator /> */}
       </section>
     )
   }

@@ -9,7 +9,7 @@ module.exports = {
   },
   main: {
     inviteTitle: 'You are invited to the wedding of',
-    inviteNames: `Tobi Victoria Weinstock \n & \n Jeoffrey Alfred Jacques Roussey`,
+    inviteNames: `Tobi Victoria Weinstock \n & \n Jeoffrey Roussey`,
     inviteDate: 'on Saturday, May Twentieth \n Two Thousand & Seventeen \n at four o\'clock in the afternoon',
     inviteAddress: 'Chalet de la Porte Jaune \n AVENUE DE NOGENT \n 75012 Paris',
     inviteConclusion: 'Reception, dinner and dancing to follow'

@@ -1,14 +1,12 @@
 import React from 'react';
-
+// http://designspiration.net/image/2665752595646/
 const Hero = (props) => {
   return (
     <div className="hero">
-      <div className="hero__wrapper">
+      <div className="hero__asset">
         <div className="hero__title-group">
-          <div className="hero__title-group--circle">
-            <h1>{props.title}</h1>
-            <h2>{props.subtitle}</h2>
-          </div>
+          <h1>Tobi + Jeoff <br/>
+          Coming Spring 2017...</h1>
         </div>
       </div>
     </div>
