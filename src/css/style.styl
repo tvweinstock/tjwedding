@@ -27,17 +27,6 @@ section p
   margin 0 auto
   border 2px solid berryRed
 
-.oa1
-  animation fades 4s infinite
-.oa2
-  animation fades 5s infinite
-  animation-delay 1s
-.oa3
-  animation fades 6s infinite
-  animation-delay 2s
-
-
-
 .invitation + svg
   position absolute
   bottom 0
@@ -46,10 +35,8 @@ section p
   height 100%
   opacity 0.8
   z-index -1
-
-
-
-
+  .faded
+    opacity 0.6
 
 .invitation p
   text-transform uppercase
@@ -64,33 +51,3 @@ section p
   font-style: italic
   font-size 3.2rem
   margin-bottom 25px
-
-.circle-images
-  display flex
-  justify-content space-around
-  margin 50px auto
-  padding 0 10%
-
-.circle-image img
-  width 240px
-  height 240px
-  border-radius 50%
-  border 2px solid berryRed
-
-
-.playlist-form
-  margin 40px 0
-  text-align center
-
-@keyframes fades {
-  0% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.8;
-  }
-
-}

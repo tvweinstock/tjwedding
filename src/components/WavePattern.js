@@ -2,16 +2,19 @@ import React from 'react';
 const WavePattern = (props) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-      <pattern id="circlePattern"
-               x="0" y="0" width="145" height="140"
+      <pattern id="zigzag"
+               x="0" y="0" width="60" height="240"
                patternUnits="userSpaceOnUse" >
-        <circle cx="30" cy="30" r="30" fill="#011627" className="oa1" />
-        <circle cx="10" cy="119" r="9" fill="#2ec4b6" className="oa2" />
-        <circle cx="120" cy="70" r="15" fill="#e71d36" className="oa3" />
-        <circle cx="70" cy="80" r="28" fill="#2ec4b6" className="oa1" />
-        <circle cx="80" cy="122" r="13" fill="#e71d36" className="oa3" />
+           <polygon fill="#ffe66d" className="faded" points="0,0 30,30 30,60 0,30"></polygon>
+           <polygon fill="#ffe66d" points="30,30 60,0 60,30 30,60"></polygon>
+           <polygon fill="#ff6b6b" className="faded" points="0,60 30,90 30,120 0,90"></polygon>
+           <polygon fill="#ff6b6b" points="30,90 60,60 60,90 30,120"></polygon>
+           <polygon fill="#4ecdc4" className="faded" points="0,120 30,150 30,180 0,150"></polygon>
+           <polygon fill="#4ecdc4" points="30,150 60,120 60,150 30,180"></polygon>
+           <polygon fill="#1a535c" className="faded" points="0,180 30,210 30,240 0,210"></polygon>
+           <polygon fill="#1a535c" points="30,210 60,180 60,210 30,240"></polygon>
       </pattern>
-      <rect fill="url(#circlePattern)" x="0" y="0" width="100%" height="100%"/>
+      <rect fill="url(#zigzag)" x="0" y="0" width="100%" height="100%"/>
     </svg>
   );
 };

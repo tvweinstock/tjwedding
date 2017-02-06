@@ -12,7 +12,7 @@
 .hero .hero__asset {
   background-image: url("images/tj.jpg");
   background-attachment: fixed;
-  background-position: 50%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -40,7 +40,7 @@
   content: "";
   height: 3px;
   width: 80px;
-  background-color: #f1faee;
+  background-color: #f7fff7;
   position: absolute;
   left: calc(50% - 40px);
   display: block;
@@ -53,15 +53,15 @@
 }
 .hero__title-group h1,
 .hero__title-group h2 {
-  color: #f1faee;
+  color: #f7fff7;
   font-size: 40px;
   line-height: 1.5;
 }
 header nav {
   width: 100%;
   margin: 0;
-  background-color: #1d3557;
-  border-bottom: 4px solid #e63946;
+  background-color: #1a535c;
+  border-bottom: 4px solid #ff6b6b;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +87,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #f1faee;
+  color: #f7fff7;
   padding: 20px;
   display: inline-block;
 }
@@ -103,7 +103,7 @@ nav ul li a.active {
   font-size: 1.5rem;
   -ms-flex-item-align: center;
       align-self: center;
-  color: #f1faee;
+  color: #f7fff7;
 }
 .lang-picker li {
   list-style: none;
@@ -120,7 +120,7 @@ nav ul li a.active {
   left: 50%;
   margin-left: -5px;
   display: block;
-  background: #e63946;
+  background: #ff6b6b;
 }
 article,
 aside,
@@ -313,7 +313,7 @@ section h1::after {
   height: 2px;
   width: 30px;
   display: block;
-  background: #e63946;
+  background: #ff6b6b;
   margin: 10px auto;
 }
 * {
@@ -331,7 +331,7 @@ section p {
 #home {
   position: relative;
   padding: 100px 0;
-  border-bottom: 4px solid #e63946;
+  border-bottom: 4px solid #ff6b6b;
 }
 .invitation {
   text-align: center;
@@ -339,23 +339,7 @@ section p {
   background-color: #fff;
   width: 50%;
   margin: 0 auto;
-  border: 2px solid #e63946;
-}
-.oa1 {
-  -webkit-animation: fades 4s infinite;
-          animation: fades 4s infinite;
-}
-.oa2 {
-  -webkit-animation: fades 5s infinite;
-          animation: fades 5s infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.oa3 {
-  -webkit-animation: fades 6s infinite;
-          animation: fades 6s infinite;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  border: 2px solid #ff6b6b;
 }
 .invitation + svg {
   position: absolute;
@@ -365,6 +349,9 @@ section p {
   height: 100%;
   opacity: 0.8;
   z-index: -1;
+}
+.invitation + svg .faded {
+  opacity: 0.6;
 }
 .invitation p {
   text-transform: uppercase;
@@ -379,45 +366,4 @@ section p {
   font-style: italic;
   font-size: 3.2rem;
   margin-bottom: 25px;
-}
-.circle-images {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 50px auto;
-  padding: 0 10%;
-}
-.circle-image img {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  border: 2px solid #e63946;
-}
-.playlist-form {
-  margin: 40px 0;
-  text-align: center;
-}
-@-webkit-keyframes fades {
-  0% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
-@keyframes fades {
-  0% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0.8;
-  }
 }
