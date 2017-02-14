@@ -37,7 +37,6 @@ class App extends React.Component {
     return (
       <div className="main">
         <Header data={langData.header} setRootLang={this.setRootLang} />
-        {/* <LangPicker data={langData.data.lang}  /> */}
         <Main data={langData.main} />
         <About data={langData.about} />
         <Contact data={langData.contact} />

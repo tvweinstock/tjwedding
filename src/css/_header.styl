@@ -1,19 +1,20 @@
+.header
+  padding 0
+
 .hero
   position relative
   font-size 0
   &:before
     content ""
     display inline-block
-    padding-bottom 80%
+    padding-bottom 70%
     height auto
     vertical-align middle
 
 
 .hero .hero__asset
   background-image url(images/tj.jpg)
-  background-attachment fixed
-  background-position 50% 50%
-  background-repeat no-repeat
+  background-position center
   background-size cover
   position absolute
   bottom 0
@@ -22,9 +23,15 @@
   top 0
   overflow hidden
   display flex
-  margin 0
+  margin 5% auto
+  width 90%
   justify-content center
   align-items center
+  transition filter .5s ease
+
+.filtered
+  filter grayscale(1)
+  transition filter .5s ease
 
 .hero__title-group
   position relative

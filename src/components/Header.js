@@ -6,13 +6,13 @@ class Header extends React.Component {
  render () {
    const data = this.props.data;
    return (
-     <div>
+     <section className="header">
        <Hero title={data.title} subtitle={data.subtitle} />
        <header>
          <Nav data={data} setRootLang={this.props.setRootLang} navType="original" />
          <Nav data={data} setRootLang={this.props.setRootLang} navType="cloned" />
        </header>
-     </div>
+     </section>
    )
  }
 }

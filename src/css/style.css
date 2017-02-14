@@ -1,3 +1,6 @@
+.header {
+  padding: 0;
+}
 .hero {
   position: relative;
   font-size: 0;
@@ -5,15 +8,13 @@
 .hero:before {
   content: "";
   display: inline-block;
-  padding-bottom: 80%;
+  padding-bottom: 70%;
   height: auto;
   vertical-align: middle;
 }
 .hero .hero__asset {
   background-image: url("images/tj.jpg");
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   position: absolute;
   bottom: 0;
@@ -24,13 +25,26 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  margin: 5% auto;
+  width: 90%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+}
+.filtered {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
 }
 .hero__title-group {
   position: relative;
