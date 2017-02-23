@@ -24,7 +24,7 @@
   overflow hidden
   display flex
   margin 5% auto
-  width 90%
+  width 88%
   justify-content center
   align-items center
   transition filter .5s ease
@@ -35,22 +35,24 @@
 
 .hero__title-group
   position relative
-  &:after, &:before
-    content ""
-    height 3px
-    width 80px
-    background-color txtWhite
-    position absolute
-    left calc(50% - 40px)
-    display block
-  &:after
-    bottom 0
-  &:before
-    top 0
+
 
 
 .hero__title-group h1,
 .hero__title-group h2
   color txtWhite
-  font-size 40px
+  font-size 50px
   line-height 1.5
+
+.hero__title-group h2
+  font-size 30px
+
+.hero__title-group .hashtag
+  position absolute
+  font-size 150px
+  left 50%
+  transform translate(-50%, -50%)
+  top 50%
+  opacity 0.3
+  color berryRed
+  letter-spacing 2rem

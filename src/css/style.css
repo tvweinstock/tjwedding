@@ -26,7 +26,7 @@
   display: -ms-flexbox;
   display: flex;
   margin: 5% auto;
-  width: 90%;
+  width: 88%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -49,27 +49,25 @@
 .hero__title-group {
   position: relative;
 }
-.hero__title-group:after,
-.hero__title-group:before {
-  content: "";
-  height: 3px;
-  width: 80px;
-  background-color: #f7fff7;
-  position: absolute;
-  left: calc(50% - 40px);
-  display: block;
-}
-.hero__title-group:after {
-  bottom: 0;
-}
-.hero__title-group:before {
-  top: 0;
-}
 .hero__title-group h1,
 .hero__title-group h2 {
   color: #f7fff7;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 1.5;
+}
+.hero__title-group h2 {
+  font-size: 30px;
+}
+.hero__title-group .hashtag {
+  position: absolute;
+  font-size: 150px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  opacity: 0.3;
+  color: #ff6b6b;
+  letter-spacing: 2rem;
 }
 header nav {
   width: 100%;
@@ -296,20 +294,22 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300|Cormorant+Unicase:300|Cormorant+Upright:300");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Oswald:300");
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.8rem;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Droid Serif', serif;
 }
 h1,
 h2 {
   text-align: center;
   font-weight: normal;
   margin: 0;
-  font-family: 'Cormorant Unicase', serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
 }
 h2,
 h3,
@@ -321,14 +321,6 @@ a:hover,
 a:active {
   opacity: 0.5;
   outline: 0;
-}
-section h1::after {
-  content: "";
-  height: 2px;
-  width: 30px;
-  display: block;
-  background: #ff6b6b;
-  margin: 10px auto;
 }
 * {
   box-sizing: border-box;
