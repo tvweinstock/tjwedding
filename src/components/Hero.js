@@ -20,6 +20,7 @@ class Hero extends React.Component {
   render () {
     return (
       <div className="hero">
+        <span className="logo">TJ</span>
         <div className="hero__asset filtered">
           <div className="hero__title-group">
             <h1 className="hashtag">#jobi2017</h1>

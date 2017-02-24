@@ -56,3 +56,30 @@
   opacity 0.3
   color berryRed
   letter-spacing 2rem
+
+.logo
+  font-size 5rem
+  height 7rem
+  width 7rem
+  line-height 7rem
+  border 3px solid berryRed
+  border-radius: 50%
+  letter-spacing 0rem
+  position absolute
+  box-sizing content-box
+  left 8%
+  top 9%
+  text-align center
+  z-index 1
+  color berryRed
+  font-family 'Oswald', sans-serif
+  transition all .3s
+  cursor pointer
+  &:hover
+    color txtWhite
+    background lightBlue
+    border-color lightBlue
+    transition all .3s
+    & + .filtered
+      filter grayscale(0)
+      transition filter .5s ease

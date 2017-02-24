@@ -12,7 +12,7 @@ section
   padding 60px 0
 
 section p
-  margin 0 25px 25px
+  margin 0
 
 #home
   position relative
@@ -21,13 +21,22 @@ section p
 
 .invitation
   text-align center
-  padding 60px 0
+  padding 0 0 60px
   background-color #fff
   width 50%
   margin 0 auto
   border 2px solid berryRed
+  min-width 480px
+  position relative
 
-.invitation + svg
+
+.invitation-pattern
+  position absolute
+  bottom 0
+  top 40%
+  left 0
+  right 0
+.invitation-pattern > svg
   position absolute
   bottom 0
   right 0
@@ -43,11 +52,29 @@ section p
   font-size 1.5rem
   white-space pre
   line-height 2.2rem
+  position relative
+  z-index 1
 
 .invitation h2
-  font-family 'Cormorant Upright', serif
   white-space pre
   letter-spacing: 0.2rem
-  font-style: italic
-  font-size 3.2rem
   margin-bottom 25px
+
+.invitation .invitation__intro
+  background #fff
+  position relative
+  top -10px
+  font-size 2.8rem
+  padding 0 30px
+  display inline-block
+  font-family 'Oswald', sans-serif
+
+.stamp-container
+  width 300px
+  text-align center
+  margin 0 auto
+  transform rotate(-15deg)
+  position relative
+  z-index 0
+  img
+    width 100%

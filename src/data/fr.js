@@ -8,6 +8,7 @@ module.exports = {
     subtitle: '20/05/2017'
   },
   main: {
+    inviteIntro: 'vous êtes invité',
     inviteTitle: 'Un mariage à Paris',
     inviteNames: `Tobi Victoria Weinstock \n & \n Jeoffrey Roussey`,
     inviteDate: 'on Saturday, May Twentieth \n Two Thousand & Seventeen \n at four o\'clock in the afternoon',
