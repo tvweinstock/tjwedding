@@ -2,6 +2,11 @@ import React from 'react';
 import lodash from 'lodash';
 
 class Hero extends React.Component {
+  constructor() {
+    super();
+    this.showHideOverlay = this.showHideOverlay.bind(this);
+    this.state = {showHideOverlay: true};
+  }
   componentDidMount() {
     window.addEventListener('scroll', lodash.throttle(this.filterIt, 100));
   }
@@ -15,17 +20,28 @@ class Hero extends React.Component {
     } else {
       heroAsset.classList.add('filtered');
     }
-
+  }
+  showHideOverlay() {
+    this.setState({ showHideOverlay: !this.state.showHideOverlay});
   }
   render () {
     return (
       <div className="hero">
-        <span className="logo">TJ</span>
-        <div className="hero__asset filtered">
-          <div className="hero__title-group">
-            <h1 className="hashtag">#jobi2017</h1>
-            <h1>Tobi + Jeoff </h1>
-            <h2>20 / 05 / 2017</h2>
+        <div className="hero__title-group">
+          <h1>Tobi & Jeoff </h1>
+          <h2>20 / 05 / 2017</h2>
+        </div>
+        <div className={ this.state.showHideOverlay ? "hero__container open" : "hero__container close"}>
+          <button onClick={this.showHideOverlay.bind(this)} className={ this.state.showHideOverlay ? "overlay-button open" : "overlay-button close"}>✖</button>
+          <div className="hero__asset filtered">
+            <img src={require('../css/images/tj.jpg')} alt=""/>
+          </div>
+          <div className="overlay">
+            <div className="countdown-wrap">
+              <div className="wedding-countdown">
+                It's the final countdown
+              </div>
+            </div>
           </div>
         </div>
       </div>

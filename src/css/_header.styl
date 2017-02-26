@@ -3,31 +3,14 @@
 
 .hero
   position relative
+
+.hero__asset
   font-size 0
-  &:before
-    content ""
-    display inline-block
-    padding-bottom 70%
-    height auto
-    vertical-align middle
+  text-align center
 
-
-.hero .hero__asset
-  background-image url(images/tj.jpg)
-  background-position center
-  background-size cover
-  position absolute
-  bottom 0
-  left 0
-  right 0
-  top 0
-  overflow hidden
-  display flex
-  margin 5% auto
-  width 88%
-  justify-content center
-  align-items center
-  transition filter .5s ease
+.hero__asset img
+  width 100%
+  margin 0 auto
 
 .filtered
   filter grayscale(1)
@@ -35,51 +18,103 @@
 
 .hero__title-group
   position relative
-
-
+  padding 40px 0
+  border solid paleGold
+  border-width 3px 0
+  display flex
+  flex-direction column
 
 .hero__title-group h1,
 .hero__title-group h2
-  color txtWhite
-  font-size 50px
-  line-height 1.5
+  color txtBlack
+  font-size 7rem
 
 .hero__title-group h2
-  font-size 30px
+  font-size 4rem
 
-.hero__title-group .hashtag
-  position absolute
-  font-size 150px
-  left 50%
-  transform translate(-50%, -50%)
-  top 50%
-  opacity 0.3
-  color berryRed
-  letter-spacing 2rem
+.hero__container
+  position relative
+  display flex
+  justify-content center
 
-.logo
-  font-size 5rem
-  height 7rem
-  width 7rem
-  line-height 7rem
-  border 3px solid berryRed
-  border-radius: 50%
-  letter-spacing 0rem
-  position absolute
-  box-sizing content-box
-  left 8%
-  top 9%
-  text-align center
+
+.overlay-button
   z-index 1
-  color berryRed
-  font-family 'Oswald', sans-serif
-  transition all .3s
-  cursor pointer
-  &:hover
-    color txtWhite
-    background lightBlue
-    border-color lightBlue
-    transition all .3s
-    & + .filtered
-      filter grayscale(0)
-      transition filter .5s ease
+  box-sizing content-box
+  font-size 5.2rem
+  border-radius: 50%
+  color paleGold
+  width 7rem
+  height 7rem
+  line-height 7rem
+  border 3px solid paleGold
+  background #fff
+  position absolute
+  font-family 'Raleway', sans-serif
+  padding 0
+  font-size 3rem
+  transition transform .3s ease
+  top -3.5rem
+  &.open
+    transform rotate(45deg) translate3d(0,0,0)
+    transition transform .3s ease
+  &.close
+    transform rotate(0deg)
+    transition transform .3s ease
+  &:focus
+    outline 0
+
+.overlay
+  position absolute
+  opacity 0
+  top 0
+  height 100%
+  width 100%
+  background-color txtBlack
+  overflow auto
+  align-items center
+  justify-content center
+  transition opacity .3s ease
+  border-bottom 3px solid paleGold
+
+.hero__container.close .overlay
+  opacity 1
+
+.countdown-wrap
+  color txtWhite
+  text-align center
+  max-width 90%
+  margin 0 auto
+  font-size 3rem
+
+
+@media (max-width: 900px)
+  .hero__title-group h1
+    font-size 6rem
+
+  .hero__title-group h2
+    font-size 3.5rem
+
+@media (max-width: 600px)
+  .hero__title-group h1
+    font-size 4rem
+    margin-top 20px
+  .hero__title-group h2
+    font-size 1.5rem
+    margin-top 0
+  #home
+    padding-top 60px
+  // .logo
+  //   font-size 3rem
+  //   height 5rem
+  //   width 5rem
+  //   line-height 5rem
+  //   top 5%
+  //   left 5%
+
+@media (max-width: 520px)
+  .hero__title-group h1
+    font-size 3rem
+
+  .hero__title-group h2
+    font-size 2rem

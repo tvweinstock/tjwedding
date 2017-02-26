@@ -17,15 +17,15 @@ section p
 #home
   position relative
   padding: 100px 0
-  border-bottom 4px solid berryRed
+  border-bottom 4px solid paleGoldRed
 
 .invitation
   text-align center
-  padding 0 0 60px
+  padding 0 0 100px
   background-color #fff
-  width 50%
+  width 30%
   margin 0 auto
-  border 2px solid berryRed
+  border 2px solid paleGoldRed
   min-width 480px
   position relative
 
@@ -51,9 +51,10 @@ section p
   text-transform uppercase
   font-size 1.5rem
   white-space pre
-  line-height 2.2rem
+  line-height 2.5rem
   position relative
   z-index 1
+  margin-bottom 10px
 
 .invitation h2
   white-space pre
@@ -67,14 +68,31 @@ section p
   font-size 2.8rem
   padding 0 30px
   display inline-block
-  font-family 'Oswald', sans-serif
+  font-family 'Raleway', sans-serif
+  &:after
+    content "..."
 
 .stamp-container
   width 300px
   text-align center
-  margin 0 auto
+  margin 3px auto 10px
   transform rotate(-15deg)
   position relative
   z-index 0
   img
     width 100%
+
+@media (max-width: 520px)
+  #home
+    padding-top 50px
+
+  .invitation-pattern
+    top 30%
+
+@media (max-width: 520px)
+  .invitation
+    min-width 320px
+  .stamp-container img
+    width 70%
+  .invitation h2, .invitation .invitation__intro
+    font-size 2rem

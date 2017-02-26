@@ -1,9 +1,15 @@
 header nav
   width 100%
-  margin 0
-  background-color darkBlue
-  border-bottom 4px solid berryRed
+  margin 0 auto
+  background-color txtBlack
+  border-bottom 3px solid paleGold
   display flex
+  top 0
+  position relative
+
+.cloned
+  border-top 2px solid paleGold
+  display none
 
 nav ul
   display flex
@@ -14,9 +20,6 @@ nav ul
   li
     list-style none
     font-size 1.5rem
-
-.cloned
-  display none
 
 nav ul li a
   text-decoration none
@@ -30,7 +33,7 @@ nav ul li a
 
 .lang-picker
   position absolute
-  right 25px
+  right 20px
   display flex
   font-size 1.5rem
   align-self center
@@ -50,4 +53,13 @@ nav ul li a
     left 50%
     margin-left -5px
     display block
-    background berryRed
+    background paleGold
+
+@media (max-width: 520px)
+  nav ul li
+    font-size 1.3rem
+  nav ul li a
+    padding 20px 10px
+  .lang-picker
+    right 10px
+    font-size 1.3rem
