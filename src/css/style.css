@@ -481,10 +481,11 @@ h1,
 h2 {
   text-align: center;
   font-weight: normal;
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.8rem;
   text-transform: uppercase;
+  max-width: 500px;
 }
 h2,
 h3,
@@ -502,9 +503,10 @@ a:active {
 }
 body {
   margin: 0;
+  background: url("./images/snow.png") repeat;
 }
 section {
-  padding: 60px 0;
+  padding-top: 50px;
 }
 section p {
   margin: 0;
@@ -516,8 +518,8 @@ section p {
 }
 .invitation {
   text-align: center;
-  padding: 0 0 100px;
-  background-color: #fff;
+  padding: 100px 0 100px;
+  background: #fff;
   width: 30%;
   margin: 0 auto;
   border: 2px solid rgba(25,23,25,0.5);
@@ -560,7 +562,6 @@ section p {
 .invitation .invitation__intro {
   background: #fff;
   position: relative;
-  top: -10px;
   font-size: 2.8rem;
   padding: 0 30px;
   display: inline-block;
@@ -605,4 +606,62 @@ section p {
   .invitation .invitation__intro {
     font-size: 1.6rem;
   }
+}
+.imageSwitcher__container {
+  position: relative;
+  width: 600px;
+  height: 425px;
+  margin: 50px auto 30px;
+}
+.imageSwitcher__image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+.imageSwitcher__image-container.slideActive {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+.imageSwitcher__image-container img {
+  width: 100%;
+}
+.switcherItemsNav {
+  position: absolute;
+  list-style: none;
+  top: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.switcherItemsNav li {
+  text-decoration: none;
+  margin: 0 5px;
+  color: #f3e5d3;
+  background: #191719;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #f3e5d3;
+  cursor: pointer;
+}
+.switcherItemsNav li.slideActive {
+  background: #f3e5d3;
+  color: #191719;
+  border: 1px solid #191719;
+}
+.imageSwitcher__container + p {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
 }

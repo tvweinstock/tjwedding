@@ -28,7 +28,6 @@ module.exports = {
     desc: 'Préparez-vous à boire énormement de champagne et de manger tous les hommards',
   },
   about: {
-    date: '',
-    morelove: ''
+    title: 'Jeoff et Tobi, une histoire d\'amour'
   }
 };
