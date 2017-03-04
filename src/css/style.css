@@ -431,7 +431,7 @@ section p {
 #home {
   position: relative;
   padding: 100px 0;
-  border-bottom: 4px solid paleGoldRed;
+  border-bottom: 4px solid #e2ca95;
 }
 .invitation {
   text-align: center;
@@ -439,14 +439,14 @@ section p {
   background-color: #fff;
   width: 30%;
   margin: 0 auto;
-  border: 2px solid paleGoldRed;
+  border: 2px solid rgba(25,23,25,0.5);
   min-width: 480px;
   position: relative;
 }
 .invitation-pattern {
   position: absolute;
   bottom: 0;
-  top: 40%;
+  top: 30%;
   left: 0;
   right: 0;
 }
