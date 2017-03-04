@@ -1,5 +1,6 @@
 import React from 'react';
 import lodash from 'lodash';
+import Countdown from './Countdown';
 
 class Hero extends React.Component {
   constructor() {
@@ -39,7 +40,7 @@ class Hero extends React.Component {
           <div className="overlay">
             <div className="countdown-wrap">
               <div className="wedding-countdown">
-                It's the final countdown
+                <Countdown />
               </div>
             </div>
           </div>
