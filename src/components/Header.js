@@ -7,7 +7,7 @@ class Header extends React.Component {
    const data = this.props.data;
    return (
      <section className="header">
-       <Hero title={data.title} subtitle={data.subtitle} />
+       <Hero title={data.title} subtitle={data.subtitle} clockData={data.clock} />
        <header>
          <Nav data={data} setRootLang={this.props.setRootLang} navType="original" />
          <Nav data={data} setRootLang={this.props.setRootLang} navType="cloned" />

@@ -4,13 +4,18 @@
 .hero
   position relative
 
-.hero__asset
+.hero__container
+  position relative
+  display flex
+  justify-content center
   font-size 0
   text-align center
+  background-color txtBlack
 
 .hero__asset img
   width 100%
-  margin 0 auto
+  max-width 1200px
+  margin 30px auto
 
 .filtered
   filter grayscale(1)
@@ -31,12 +36,6 @@
 
 .hero__title-group h2
   font-size 4rem
-
-.hero__container
-  position relative
-  display flex
-  justify-content center
-
 
 .overlay-button
   z-index 1
@@ -80,13 +79,50 @@
 .hero__container.close .overlay
   opacity 1
 
-.countdown-wrap
+.overlay h1
+  font-size 3rem
+  color txtWhite
+  position relative
+  &:after
+    content ""
+    height 3px
+    width 30px
+    background-color paleGold
+    position absolute
+    display block
+    bottom -25px
+    left 50%
+    margin-left -15px
+
+
+.countdown-text-container
   color txtWhite
   text-align center
-  max-width 90%
+  width 60%
   margin 0 auto
-  font-size 3rem
+  font-size 2.5rem
+  display flex
+  flex-direction column
+  justify-content center
+  height 60%
+  font-family 'Raleway', sans-serif
+  text-transform uppercase
 
+
+.countdown-clock
+  display flex
+  justify-content space-around
+  align-items center
+  width 100%
+
+.countdown-clock--item
+  margin 0 1rem 5rem
+  small
+    font-size 1.5rem
+
+@media (max-width: 1200px)
+  .hero__asset img
+    margin 0 auto
 
 @media (max-width: 900px)
   .hero__title-group h1
@@ -94,6 +130,10 @@
 
   .hero__title-group h2
     font-size 3.5rem
+
+@media (max-width: 700px)
+  .countdown-text-container
+    height 80%
 
 @media (max-width: 600px)
   .hero__title-group h1
@@ -104,17 +144,20 @@
     margin-top 0
   #home
     padding-top 60px
-  // .logo
-  //   font-size 3rem
-  //   height 5rem
-  //   width 5rem
-  //   line-height 5rem
-  //   top 5%
-  //   left 5%
+  .countdown-text-container
+    height 100%
 
 @media (max-width: 520px)
   .hero__title-group h1
     font-size 3rem
-
+  .countdown-text-container
+    width 90%
+  .countdown-clock--item
+    margin 0
   .hero__title-group h2
     font-size 2rem
+  .overlay h1
+    font-size 2rem
+    padding-top 10px
+  .overlay small
+    font-size 1.2rem

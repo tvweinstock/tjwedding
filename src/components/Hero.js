@@ -38,11 +38,7 @@ class Hero extends React.Component {
             <img src={require('../css/images/tj.jpg')} alt=""/>
           </div>
           <div className="overlay">
-            <div className="countdown-wrap">
-              <div className="wedding-countdown">
-                <Countdown />
-              </div>
-            </div>
+            <Countdown textData={this.props.clockData} />
           </div>
         </div>
       </div>

@@ -4,13 +4,22 @@
 .hero {
   position: relative;
 }
-.hero__asset {
+.hero__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 0;
   text-align: center;
+  background-color: #191719;
 }
 .hero__asset img {
   width: 100%;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 30px auto;
 }
 .filtered {
   -webkit-filter: grayscale(1);
@@ -40,15 +49,6 @@
 }
 .hero__title-group h2 {
   font-size: 4rem;
-}
-.hero__container {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .overlay-button {
   z-index: 1;
@@ -112,12 +112,63 @@
 .hero__container.close .overlay {
   opacity: 1;
 }
-.countdown-wrap {
+.overlay h1 {
+  font-size: 3rem;
+  color: #e8e7e8;
+  position: relative;
+}
+.overlay h1:after {
+  content: "";
+  height: 3px;
+  width: 30px;
+  background-color: #e2ca95;
+  position: absolute;
+  display: block;
+  bottom: -25px;
+  left: 50%;
+  margin-left: -15px;
+}
+.countdown-text-container {
   color: #e8e7e8;
   text-align: center;
-  max-width: 90%;
+  width: 60%;
   margin: 0 auto;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60%;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.countdown-clock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.countdown-clock--item {
+  margin: 0 1rem 5rem;
+}
+.countdown-clock--item small {
+  font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .hero__asset img {
+    margin: 0 auto;
+  }
 }
 @media (max-width: 900px) {
   .hero__title-group h1 {
@@ -125,6 +176,11 @@
   }
   .hero__title-group h2 {
     font-size: 3.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .countdown-text-container {
+    height: 80%;
   }
 }
 @media (max-width: 600px) {
@@ -139,13 +195,29 @@
   #home {
     padding-top: 60px;
   }
+  .countdown-text-container {
+    height: 100%;
+  }
 }
 @media (max-width: 520px) {
   .hero__title-group h1 {
     font-size: 3rem;
   }
+  .countdown-text-container {
+    width: 90%;
+  }
+  .countdown-clock--item {
+    margin: 0;
+  }
   .hero__title-group h2 {
     font-size: 2rem;
+  }
+  .overlay h1 {
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+  .overlay small {
+    font-size: 1.2rem;
   }
 }
 header nav {
@@ -226,6 +298,15 @@ nav ul li a.active {
   .lang-picker {
     right: 10px;
     font-size: 1.3rem;
+  }
+}
+@media (max-width: 400px) {
+  nav ul li,
+  .lang-picker {
+    font-size: 1.2rem;
+  }
+  nav ul li a {
+    padding: 20px 5px;
   }
 }
 article,
@@ -510,13 +591,18 @@ section p {
 }
 @media (max-width: 520px) {
   .invitation {
-    min-width: 320px;
+    min-width: 300px;
+    width: 80%;
+    padding-bottom: 40px;
+  }
+  .invitation p {
+    font-size: 1.2rem;
   }
   .stamp-container img {
     width: 70%;
   }
   .invitation h2,
   .invitation .invitation__intro {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }

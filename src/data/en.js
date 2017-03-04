@@ -5,7 +5,14 @@ module.exports = {
     about: 'about',
     contact: 'contact',
     title: 'Tobi & Jeoff',
-    subtitle: '20/05/2017'
+    subtitle: '20/05/2017',
+    clock: {
+      days: 'days',
+      hours: 'hours',
+      minutes: 'minutes',
+      seconds: 'seconds',
+      countdownHeader: 'countdown to party town'
+    }
   },
   main: {
     inviteIntro: 'You are invited',
