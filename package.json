@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tvweinstock.github.io/tjwedding/",
   "devDependencies": {
     "autoprefixer-stylus": "0.10.0",
     "react-scripts": "0.7.0",
