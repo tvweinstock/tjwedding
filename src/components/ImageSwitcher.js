@@ -1,10 +1,10 @@
 import React from 'react';
 
 const imageSwitcherContent = {
-  image1: {imgSrc: require('../css/images/tj5.jpg')},
+  image1: {imgSrc: require('../css/images/tj4.jpg')},
   image2: {imgSrc: require('../css/images/tj2.jpg')},
-  image3: {imgSrc: require('../css/images/tj3.jpg')},
-  image4: {imgSrc: require('../css/images/tj4.jpg')}
+  image3: {imgSrc: require('../css/images/tj5.jpg')},
+  image4: {imgSrc: require('../css/images/tj3.jpg')}
 };
 
 class ImageSwitcher extends React.Component {

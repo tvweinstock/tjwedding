@@ -19,7 +19,7 @@ section
 section p
   margin 0
 
-#home
+#home, #contact, #about
   position relative
   padding: 100px 0
   border-bottom 4px solid paleGold
@@ -94,7 +94,7 @@ section p
   .invitation
     min-width 300px
     width 80%
-    padding-bottom 40px
+    padding 40px 0
   .invitation p
     font-size 1.2rem
   .stamp-container img
@@ -138,18 +138,18 @@ section p
   li {
     text-decoration: none;
     margin: 0 5px;
-    color: champagne;
-    background: txtBlack;
+    color: txtWhite;
+    background: darkblue;
     height: 40px;
     width: 40px;
     line-height: 40px;
     display: inline-block;
     border-radius: 50%;
-    border: 1px solid champagne;
+    border: 1px solid txtWhite;
     cursor: pointer;
     &.slideActive {
-      background: champagne;
-      color: txtBlack;
+      background: txtWhite;
+      color: darkblue;
       border: 1px solid txtBlack;
     }
   }
@@ -160,7 +160,6 @@ section p
   margin 0 auto
   text-align center
   line-height 1.5
-  color txtBlack
 }
 
 @media (max-width: 680px)

@@ -1,3 +1,45 @@
+#contact {
+  background-color: #0a242f;
+  color: #e8e7e8;
+}
+.icon-group {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: 20px auto;
+  position: relative;
+}
+.icon-group .fa {
+  line-height: 10rem;
+  font-size: 6rem;
+  height: 10rem;
+  width: 10rem;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.icon-group .fa:first-child {
+  margin-right: 20px;
+}
+.icon-group p {
+  margin-top: 30px;
+  line-height: 1.3;
+  position: absolute;
+  opacity: 0;
+}
+.icon-group input {
+  visibility: hidden;
+  border-width: 0;
+  font-size: 0;
+  padding: 0;
+}
+input:checked + label p {
+  opacity: 1 !important;
+}
 .header {
   padding: 0;
 }
@@ -14,7 +56,7 @@
           justify-content: center;
   font-size: 0;
   text-align: center;
-  background-color: #191719;
+  background-color: #0a242f;
 }
 .hero__asset img {
   width: 100%;
@@ -96,7 +138,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #191719;
+  background-color: #0a242f;
   overflow: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -223,7 +265,7 @@
 header nav {
   width: 100%;
   margin: 0 auto;
-  background-color: #191719;
+  background-color: #0a242f;
   border-bottom: 3px solid #e2ca95;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -478,6 +520,7 @@ html {
 body {
   font-size: 1.8rem;
   font-family: 'Droid Serif', serif;
+  color: #191719;
 }
 h1,
 h2 {
@@ -505,6 +548,11 @@ a:active {
     font-size: 3rem;
   }
 }
+@media (max-width: 420px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -523,7 +571,9 @@ section {
 section p {
   margin: 0;
 }
-#home {
+#home,
+#contact,
+#about {
   position: relative;
   padding: 100px 0;
   border-bottom: 4px solid #e2ca95;
@@ -604,7 +654,7 @@ section p {
   .invitation {
     min-width: 300px;
     width: 80%;
-    padding-bottom: 40px;
+    padding: 40px 0;
   }
   .invitation p {
     font-size: 1.2rem;
@@ -655,19 +705,19 @@ section p {
 .switcherItemsNav li {
   text-decoration: none;
   margin: 0 5px;
-  color: #f3e5d3;
-  background: #191719;
+  color: #e8e7e8;
+  background: #0a242f;
   height: 40px;
   width: 40px;
   line-height: 40px;
   display: inline-block;
   border-radius: 50%;
-  border: 1px solid #f3e5d3;
+  border: 1px solid #e8e7e8;
   cursor: pointer;
 }
 .switcherItemsNav li.slideActive {
-  background: #f3e5d3;
-  color: #191719;
+  background: #e8e7e8;
+  color: #0a242f;
   border: 1px solid #191719;
 }
 .imageSwitcher__container + p {
@@ -675,7 +725,6 @@ section p {
   margin: 0 auto;
   text-align: center;
   line-height: 1.5;
-  color: #191719;
 }
 @media (max-width: 680px) {
   .imageSwitcher__container {

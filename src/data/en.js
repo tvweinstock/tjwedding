@@ -24,9 +24,9 @@ module.exports = {
   },
 
   contact: {
-    number: '332220039393',
-    location: 'Your moms',
-    desc: 'BYOB',
+    contactInfo: 'Give us a call or email any old time!',
+    title: 'Practical Information',
+    location: "The event is taking place at Chalet de la porte jaune. The adress is in Vencennes",
   },
 
   about: {
