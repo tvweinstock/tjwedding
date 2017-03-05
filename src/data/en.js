@@ -31,6 +31,6 @@ module.exports = {
 
   about: {
     title: `Jeoff and Tobi, in action!`,
-    caption: "We met one fun night in Toronto, at an international 80s themed party. The details of our first conversation are hazy, but the feelings were clear. In our five years together we've been a lot of places together, conquered many challenges and gone through some delightfully quirky roommates. Married life is the next great adventure!"
+    caption: "We met one fun night in Toronto, at an international 80s themed party. The details of our first conversation are hazy, but the feelings were clear. In our five years together we've been a lot of places, conquered many challenges and gone through some delightfully quirky roommates. Married life is the next great adventure!"
   }
 };

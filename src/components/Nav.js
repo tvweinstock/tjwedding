@@ -26,7 +26,7 @@ class Nav extends React.Component {
     return (
       <nav className={this.props.navType}>
         <ul>
-          <li><a href="#">{data.home}</a></li>
+          <li><a href="#home">{data.home}</a></li>
           <li><a href="#about">{data.about}</a></li>
           <li><a href="#contact">{data.contact}</a></li>
         </ul>

@@ -12,6 +12,10 @@ body
 section
   padding-top 50px
 
+@media (max-width: 680px)
+  section
+    padding-top 25px
+
 section p
   margin 0
 
@@ -85,11 +89,8 @@ section p
 @media (max-width: 520px)
   #home
     padding-top 50px
-
   .invitation-pattern
     top 30%
-
-@media (max-width: 520px)
   .invitation
     min-width 300px
     width 80%
@@ -120,13 +121,14 @@ section p
   }
   img {
     width 100%
+    border 4px solid champagne
   }
 }
 
 .switcherItemsNav {
   position: absolute;
   list-style: none;
-  top: 350px;
+  top: 85%;
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -158,4 +160,22 @@ section p
   margin 0 auto
   text-align center
   line-height 1.5
+  color txtBlack
 }
+
+@media (max-width: 680px)
+  .imageSwitcher__container
+    width 400px
+    height 275px
+    margin-top 20px
+  .imageSwitcher__container + p
+    font-size 1.3rem
+    width 300px
+    padding 0 5px
+@media (max-width: 420px)
+  .imageSwitcher__container
+    width 300px
+    height 200px
+  .switcherItemsNav
+    top 80%
+    font-size 1.3rem
