@@ -11,7 +11,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
-  margin: 20px auto;
+  margin: 30px auto;
   position: relative;
   width: 500px;
 }
@@ -64,7 +64,7 @@ input:checked + label p {
 .hero__asset img {
   width: 100%;
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 50px auto;
 }
 .filtered {
   -webkit-filter: grayscale(1);
@@ -89,8 +89,9 @@ input:checked + label p {
 }
 .hero__title-group h1,
 .hero__title-group h2 {
-  color: #191719;
+  color: #0a242f;
   font-size: 7rem;
+  max-width: 100%;
 }
 .hero__title-group h2 {
   font-size: 4rem;
@@ -523,7 +524,7 @@ html {
 body {
   font-size: 1.8rem;
   font-family: 'Droid Serif', serif;
-  color: #191719;
+  color: #0a242f;
 }
 h1,
 h2 {
@@ -533,7 +534,23 @@ h2 {
   font-family: 'Raleway', sans-serif;
   letter-spacing: 0.8rem;
   text-transform: uppercase;
+  position: relative;
+  font-size: 4.2rem;
   max-width: 500px;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  display: block;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -15px;
+  background: #0a242f;
+}
+.underline.white::after {
+  background: #e8e7e8;
 }
 h2,
 h3,
@@ -576,7 +593,8 @@ section p {
 }
 #home,
 #contact,
-#about {
+#about,
+footer {
   position: relative;
   padding: 100px 0;
   border-bottom: 4px solid #e2ca95;
@@ -587,7 +605,7 @@ section p {
   background: #fff;
   width: 30%;
   margin: 0 auto;
-  border: 2px solid rgba(25,23,25,0.5);
+  border: 2px solid rgba(10,36,47,0.5);
   min-width: 480px;
   position: relative;
 }
@@ -623,6 +641,7 @@ section p {
   white-space: pre;
   letter-spacing: 0.2rem;
   margin-bottom: 25px;
+  font-size: 2.8rem;
 }
 .invitation .invitation__intro {
   background: #fff;
@@ -721,7 +740,7 @@ section p {
 .switcherItemsNav li.slideActive {
   background: #e8e7e8;
   color: #0a242f;
-  border: 1px solid #191719;
+  border: 1px solid #0a242f;
 }
 .imageSwitcher__container + p {
   max-width: 600px;
@@ -750,4 +769,20 @@ section p {
     top: 80%;
     font-size: 1.3rem;
   }
+}
+footer {
+  background: #fff;
+  text-align: center;
+}
+.footer-asset-container {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+.footer-asset-container img {
+  width: 90%;
+  max-width: 900px;
+}
+.hashtag {
+  margin-top: 20px;
 }

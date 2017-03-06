@@ -16,8 +16,23 @@ h1, h2
   font-family 'Raleway', sans-serif
   letter-spacing .8rem
   text-transform uppercase
+  position relative
+  font-size 4.2rem
   max-width 500px
 
+.underline
+  &::after
+    content ""
+    position absolute
+    width 30px
+    height 2px
+    display block
+    bottom -15px
+    left 50%
+    margin-left -15px
+    background txtBlack
+  &.white::after
+    background txtWhite
 
 h2,h3,h4
   font-weight normal

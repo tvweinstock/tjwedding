@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Main from './Main';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
 import en from '../data/en'
 import fr from '../data/fr'
 
@@ -40,6 +41,7 @@ class App extends React.Component {
         <Main data={langData.main} />
         <About data={langData.about} />
         <Contact data={langData.contact} />
+        <Footer />
       </div>
     )
   }

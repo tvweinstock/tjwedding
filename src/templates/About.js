@@ -6,7 +6,7 @@ class About extends React.Component {
     const textData = this.props.data;
     return (
       <section id="about">
-        <h1>{textData.title}</h1>
+        <h1 className="underline">{textData.title}</h1>
         <ImageSwitcher caption={textData.caption} />
       </section>
     )
