@@ -22,9 +22,16 @@
   width: 10rem;
   border: 1px solid;
   border-radius: 50%;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.icon-group .fa:first-child {
-  margin-right: 20px;
+.icon-group .fa:hover {
+  background: #e8e7e8;
+  color: #0a242f;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .icon-group p {
   margin-top: 30px;
@@ -33,6 +40,8 @@
   opacity: 0;
   left: 0;
   width: 100%;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 .icon-group input {
   visibility: hidden;
@@ -40,8 +49,14 @@
   font-size: 0;
   padding: 0;
 }
+input:checked + label .fa {
+  background: #e8e7e8;
+  color: #0a242f;
+}
 input:checked + label p {
   opacity: 1 !important;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 .header {
   padding: 0;
