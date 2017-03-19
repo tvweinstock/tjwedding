@@ -14,10 +14,10 @@ class App extends React.Component {
     this.setRootLang = this.setRootLang.bind(this);
   }
   componentWillMount() {
-    const localStorageRef = localStorage.getItem(`lang`);
-    if (localStorageRef) {
+    const sessionStorageRef = sessionStorage.getItem(`lang`);
+    if (sessionStorageRef) {
       this.setState({
-        activeLang: JSON.parse(localStorageRef)
+        activeLang: JSON.parse(sessionStorageRef)
       });
     } else {
       this.setState({activeLang:en});
@@ -31,7 +31,7 @@ class App extends React.Component {
       this.setState({activeLang:en});
   }
   componentWillUpdate(nextProps, nextState) {
-    localStorage.setItem(`lang`, JSON.stringify(nextState.activeLang));
+    sessionStorage.setItem(`lang`, JSON.stringify(nextState.activeLang));
   }
   render() {
     let langData = this.state.activeLang;

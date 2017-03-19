@@ -39,17 +39,20 @@
   font-size 4rem
 
 .overlay-button
-  z-index 1
+  z-index 10
   box-sizing content-box
   font-size 5.2rem
   border-radius: 50%
   color paleGold
+  background paleGold
   width 7rem
   height 7rem
   line-height 7rem
   border 3px solid paleGold
   background #fff
   position absolute
+  left 50%
+  margin-left -3.5rem
   font-family 'Raleway', sans-serif
   padding 0
   font-size 3rem
@@ -76,6 +79,7 @@
   justify-content center
   transition opacity .3s ease
   border-bottom 3px solid paleGold
+  z-index 9
 
 .hero__container.close .overlay
   opacity 1

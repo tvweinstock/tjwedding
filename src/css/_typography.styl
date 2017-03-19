@@ -32,9 +32,13 @@ a
   width auto
   z-index 1
   margin 10px 0
+  user-select none
   &:hover
     transition color 0.3s ease
     color txtWhite
+
+a:focus, a:hover, a:active
+  outline 0
 
 .underline
   margin-bottom 10px
@@ -53,9 +57,6 @@ a
 
 h2,h3,h4
   font-weight normal
-
-a:focus, a:hover, a:active
-  outline 0
 
 @media (max-width: 680px)
   h1

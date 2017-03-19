@@ -35,11 +35,11 @@ class Hero extends React.Component {
         </div>
         <div className={ this.state.showHideOverlay ? "hero__container open" : "hero__container close"}>
           <button onClick={this.showHideOverlay.bind(this)} className={ this.state.showHideOverlay ? "overlay-button open" : "overlay-button close"}>✖</button>
-          <div className="hero__asset filtered">
-            <img src={require('../css/images/tj.jpg')} alt=""/>
-          </div>
           <div className="overlay">
             <Countdown textData={this.props.clockData} />
+          </div>
+          <div className="hero__asset filtered">
+            <img src={require('../css/images/tj.jpg')} alt=""/>
           </div>
         </div>
       </div>
