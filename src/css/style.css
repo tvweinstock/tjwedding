@@ -12,18 +12,18 @@
       -ms-flex-pack: center;
           justify-content: center;
   width: 50%;
-  margin: 30px auto;
+  margin: 20px auto 0;
   position: relative;
   width: 500px;
 }
 .icon-group .fa {
-  line-height: 10rem;
-  font-size: 6rem;
-  height: 10rem;
-  width: 10rem;
+  line-height: 8rem;
+  font-size: 5rem;
+  height: 8rem;
+  width: 8rem;
   border: 1px solid;
   border-radius: 50%;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -533,7 +533,7 @@ input::-moz-focus-inner {
 * {
   box-sizing: border-box;
 }
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif:100|Raleway:300");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif:300|Raleway:300");
 html {
   font-size: 62.5%;
 }
@@ -554,6 +554,28 @@ h2 {
   position: relative;
   font-size: 4.2rem;
   max-width: 500px;
+}
+h3,
+h4 {
+  margin: 10px 0;
+}
+a {
+  color: #f3e5d3;
+  display: block;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  position: relative;
+  width: auto;
+  z-index: 1;
+  margin: 20px 0;
+}
+a:hover {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #e8e7e8;
+}
+.underline {
+  margin-bottom: 10px;
 }
 .underline::after {
   content: "";
@@ -577,7 +599,6 @@ h4 {
 a:focus,
 a:hover,
 a:active {
-  opacity: 0.5;
   outline: 0;
 }
 @media (max-width: 680px) {
@@ -777,11 +798,11 @@ footer {
   .imageSwitcher__container {
     width: 400px;
     height: 275px;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   .imageSwitcher__container + p {
     font-size: 1.3rem;
-    width: 300px;
+    width: 380px;
     padding: 0 5px;
   }
 }
@@ -789,6 +810,10 @@ footer {
   .imageSwitcher__container {
     width: 300px;
     height: 200px;
+  }
+  .imageSwitcher__container + p {
+    width: 300px;
+    padding: 0;
   }
   .switcherItemsNav {
     top: 80%;
