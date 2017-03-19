@@ -4,7 +4,7 @@ import SpotifyPlayer from 'react-spotify-player'
 const PlaylistEmbed = (props) => {
   const size = {
     width: '100%',
-    height: 250,
+    height: 280,
   };
   const view = 'list';
   const theme = 'white';

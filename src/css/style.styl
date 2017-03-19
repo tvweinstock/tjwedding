@@ -21,7 +21,7 @@ section p
 
 #home, #contact, #about, footer
   position relative
-  padding: 100px 0
+  padding: 80px 0
   border-bottom 4px solid paleGold
   @media (max-width: 680px)
     padding: 50px 0
@@ -171,7 +171,7 @@ section p
     height 275px
     margin-top 40px
   .imageSwitcher__container + p
-    font-size 1.3rem
+    font-size 1.5rem
     width 380px
     padding 0 5px
 @media (max-width: 420px)
@@ -205,3 +205,23 @@ footer
     margin 10px auto
     padding 0
     width 90px
+    li:first-child
+      transition color 0.9s ease
+    li:nth-child(2n)
+      transition color 0.7s ease
+    li:nth-child(3n)
+      transition color 0.5s ease
+    li:nth-child(4n)
+      transition color 0.3s ease
+
+.hashtag:hover ul
+  li
+    color paleGold
+  li:first-child
+    transition color 0.3s ease
+  li:nth-child(2n)
+    transition color 0.5s ease
+  li:nth-child(3n)
+    transition color 0.7s ease
+  li:nth-child(4n)
+    transition color 0.9s ease

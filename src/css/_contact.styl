@@ -7,10 +7,9 @@
   text-align center
   display flex
   justify-content center
-  width 50%
   margin 20px auto 0
   position relative
-  width 500px
+  max-width 580px
   .fa
     line-height 8rem
     font-size 5rem
@@ -46,3 +45,37 @@ input:checked + label
   .contact-textcontent
     opacity 1 !important
     transition opacity .3s
+
+@media (max-width: 680px)
+  #contact
+    height 90vh
+  .contact-textcontent p,
+  .contact-textcontent a
+    font-size 1.5rem
+    width 380px
+    padding 0 5px
+    margin 0 auto
+  .contact-textcontent a
+    margin 10px auto
+
+@media (max-width: 600px)
+  #contact
+    height 75vh
+  .SpotifyPlayer
+    display none
+  .icon-group
+    .contact-textcontent
+      margin-top 15px
+    .fa
+      line-height 6rem
+      font-size 3rem
+      height 6rem
+      width 6rem
+
+@media (max-width: 420px)
+  .contact-textcontent p,
+  .contact-textcontent a
+    font-size 1.3rem
+    width 300px
+  .contact-textcontent a
+    margin 5px auto
