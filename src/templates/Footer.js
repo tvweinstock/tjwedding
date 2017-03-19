@@ -9,8 +9,13 @@ const Footer = (props) => {
         <img src={require('../css/images/paris.jpg')} alt=""/>
       </div>
       <div className="hashtag">
-        <FontAwesome name='twitter' />
         <span>#JOBI2017</span>
+        <ul>
+          <li><FontAwesome name='twitter' /></li>
+          <li><FontAwesome name='facebook' /></li>
+          <li><FontAwesome name='instagram' /></li>
+          <li><FontAwesome name='snapchat' /></li>
+        </ul>
       </div>
     </footer>
   )

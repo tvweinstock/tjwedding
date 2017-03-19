@@ -24,9 +24,9 @@ module.exports = {
   },
 
   contact: {
-    contactInfo: 'Give us a call or email any old time!',
+    contactInfo: 'If you have any questions or concerns, please do not hesitate to reach out to us by phone or email.',
     title: 'Practical Information',
-    location: "The event is taking place at Chalet de la porte jaune. The adress is in Vencennes",
+    location: "The event is taking place at Chalet de la porte jaune, the address is Avenue de Nogent 75012 Paris. It is easily accessible by car (free parking out front), RER and Uber.",
   },
 
   about: {
