@@ -20,13 +20,15 @@ module.exports = {
     inviteNames: `Tobi Victoria Weinstock \n & \n Jeoffrey Roussey`,
     inviteDate: 'on Saturday, May Twentieth \n Two Thousand & Seventeen \n at four o\'clock in the afternoon',
     inviteAddress: 'Chalet de la Porte Jaune \n AVENUE DE NOGENT \n 75012 Paris',
-    inviteConclusion: 'Reception, dinner and dancing to follow'
+    inviteConclusion: 'Reception, dinner and dancing \n to follow'
   },
 
   contact: {
     contactInfo: 'If you have any questions or concerns, please do not hesitate to reach out to us by phone or email.',
     title: 'Practical Information',
     location: "The event is taking place at Chalet de la porte jaune, the address is Avenue de Nogent 75012 Paris. It is easily accessible by car (free parking out front), RER and Uber.",
+    giftInfo: "If you are looking for a Wedding Registry, you're probably looking for wedding gift ideas, while this is not necessary, we appreciate every gesture. We have been living together for two and a half years and have everything we could possibly need! More than 'things' we would appreciate contributions to more important upcoming life events such as our upcoming honeymoon to Morocco, buying property of our own, and starting a family!",
+    playlist: "We have the venu until 3am so we need your help choosing some slick tunes! Add to the playlist to help build an amazing ambiance."
   },
 
   about: {

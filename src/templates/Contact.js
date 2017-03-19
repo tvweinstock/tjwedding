@@ -1,5 +1,6 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
+import PlaylistEmbed from '../components/PlaylistEmbed';
 
 
 class Contact extends React.Component {
@@ -27,6 +28,21 @@ class Contact extends React.Component {
               <h4>Jeoffrey:</h4>
               <a href="tel:+33 7 82 34 04 55">+33 7 82 34 04 55</a>
               <a href="mailto:jeoffrey.roussey@gmail.com">jeoffrey.roussey@gmail.com</a>
+            </div>
+          </label>
+          <input id="🎁" type="radio" name="contact-icons"/>
+          <label htmlFor="🎁">
+            <FontAwesome name='gift' />
+            <div className="contact-textcontent">
+              <p>{textData.giftInfo}</p>
+            </div>
+          </label>
+          <input id="🎵" type="radio" name="contact-icons"/>
+          <label htmlFor="🎵">
+            <FontAwesome name='music' />
+            <div className="contact-textcontent">
+              <p>{textData.playlist}</p>
+              <PlaylistEmbed />
             </div>
           </label>
         </div>
