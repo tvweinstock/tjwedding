@@ -20,10 +20,14 @@ class ImageSwitcher extends React.Component {
     this.addActiveClass(image);
   };
   addActiveClass(image) {
-    document.querySelectorAll(".imageSwitcher__image-container").forEach(function(image){
+    console.log('addActiveClass');
+    const switcherContainers = [].slice.call(document.querySelectorAll(".imageSwitcher__image-container"));
+    const switcherItems = [].slice.call(document.querySelectorAll(".imageSwitcher__image-container"));
+    console.log(switcherItems);
+    switcherContainers.forEach(function(image){
       image.classList.remove("slideActive");
     });
-    document.querySelectorAll(".switcherItemsNav li").forEach(function(listItem){
+    switcherItems.forEach(function(listItem){
       listItem.classList.remove('slideActive');
     });
     document.getElementById(image).classList.add(this.state.activeClass);
