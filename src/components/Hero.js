@@ -26,7 +26,6 @@ class Hero extends React.Component {
     this.setState({ showHideOverlay: !this.state.showHideOverlay});
   }
   render () {
-    console.log(this.props);
     return (
       <div className="hero">
         <div className="hero__title-group">

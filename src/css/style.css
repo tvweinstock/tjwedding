@@ -3,6 +3,16 @@
   color: #e8e7e8;
   height: 100vh;
 }
+#contact h4 {
+  display: inline-block;
+}
+#contact .tel {
+  display: inline-block;
+  margin-left: 10px;
+}
+#contact .email {
+  margin-top: 0;
+}
 .icon-group {
   text-align: center;
   display: -webkit-box;
@@ -99,6 +109,7 @@ input:checked + label .contact-textcontent {
   }
   .contact-textcontent a {
     margin: 5px auto 0;
+    width: auto;
   }
 }
 .header {
