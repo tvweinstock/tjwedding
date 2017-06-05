@@ -136,13 +136,13 @@
   .hero__title-group h2
     font-size 3.5rem
 
-@media (max-width: 700px)
+@media (max-width: 900px)
   .countdown-text-container
     height 80%
 
-@media (max-width: 600px)
+@media (max-width: 700px)
   .hero__title-group h1
-    font-size 4rem
+    font-size 3rem
     margin-top 20px
   .hero__title-group h2
     font-size 1.5rem
@@ -151,18 +151,20 @@
     padding-top 60px
   .countdown-text-container
     height 100%
+    width 90%
 
 @media (max-width: 520px)
-  .hero__title-group h1
-    font-size 3rem
-  .countdown-text-container
-    width 90%
   .countdown-clock--item
     margin 0
-  .hero__title-group h2
-    font-size 2rem
   .overlay h1
     font-size 2rem
     padding-top 10px
   .overlay small
     font-size 1.2rem
+
+@media (max-width: 420px)
+  .overlay h1
+    font-size 1.4rem
+    letter-spacing 0.2rem
+    &:after
+      content none
