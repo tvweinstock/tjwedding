@@ -11,7 +11,7 @@ module.exports = {
       hours: 'heures',
       minutes: 'minutes',
       seconds: 'secondes',
-      countdownHeader: 'jours restant avant la fête'
+      countdownHeader: 'temps écoulé depuis la fiesta la plus épique que le bois de vincennes aie jaimais vue'
     }
   },
   main: {

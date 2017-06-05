@@ -2,7 +2,7 @@ import React from 'react';
 class Countdown extends React.Component {
   setCountDown() {
     const endtime = new Date(Date.parse('May 20, 2017'));
-    const t = Date.parse(endtime) - Date.parse(new Date());
+    const t = Date.parse(new Date()) - Date.parse(endtime);
     const seconds = Math.floor( (t/1000) % 60 );
     const minutes = Math.floor( (t/1000/60) % 60 );
     const hours = Math.floor( (t/(1000*60*60)) % 24 );
