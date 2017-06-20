@@ -11,7 +11,7 @@ module.exports = {
       hours: 'hours',
       minutes: 'minutes',
       seconds: 'seconds',
-      countdownHeader: '...since the most epic party the bois de vincennes have every seen!'
+      countdownHeader: '...since the most epic party the bois de vincennes have ever seen!'
     }
   },
   main: {
